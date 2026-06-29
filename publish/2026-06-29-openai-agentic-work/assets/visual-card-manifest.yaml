@@ -1,0 +1,16 @@
+cards:
+  - id: card-01
+    filename: card-01-executive-summary.png
+    spec_file: assets/card-01-executive-summary.spec.md
+    insert_after_section: "核心洞察"
+    role: "Executive Summary"
+  - id: card-02
+    filename: card-02-long-running-agent-loop.png
+    spec_file: assets/card-02-long-running-agent-loop.spec.md
+    insert_after_section: "重点内容提取"
+    role: "Long-running Agent Loop"
+  - id: card-03
+    filename: card-03-engineering-implications.png
+    spec_file: assets/card-03-engineering-implications.spec.md
+    insert_after_section: "AI Native Engineering 解读"
+    role: "Engineering Implications"
