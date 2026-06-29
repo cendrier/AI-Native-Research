@@ -1,0 +1,60 @@
+task: publish_feishu_article
+version: v1
+
+article:
+  title: "OpenAI 最新研究：AI Coding 正在进入 Agentic Work 时代"
+  date: "2026-06-29"
+  category: "AI Native Engineering"
+  type: "Daily Research Brief"
+  language: "zh-CN"
+  publish_priority: "default"
+
+source:
+  primary:
+    title: "How agents are transforming work"
+    publisher: "OpenAI"
+    url: "https://arxiv.org/abs/2606.26959"
+    published_at: "2026-06-25"
+  supporting:
+    - title: "Codex-maxxing for long-running work"
+      publisher: "OpenAI"
+      url: "https://cdn.openai.com/pdf/8a9f00cf-d379-4e20-b06f-dd7ba5196a11/OAI_WhitePaper_Codex-maxxing26.pdf"
+      published_at: "2026-06-22"
+
+files:
+  root: "publish/2026-06-29-openai-agentic-work"
+  markdown: "publish/2026-06-29-openai-agentic-work/README.md"
+  metadata: "publish/2026-06-29-openai-agentic-work/metadata.yaml"
+  source: "publish/2026-06-29-openai-agentic-work/source.md"
+  source_images: "publish/2026-06-29-openai-agentic-work/assets/source-images.yaml"
+  visual_cards_manifest: "publish/2026-06-29-openai-agentic-work/assets/visual-card-manifest.yaml"
+
+feishu:
+  space: "AI Native Research"
+  folder: "Daily Briefs/2026-06"
+  visibility: "internal"
+  create_new_doc: true
+  title_format: "2026-06-29｜OpenAI 最新研究：AI Coding 正在进入 Agentic Work 时代"
+  cover_image: "assets/card-01-executive-summary.png"
+
+publishing_rules:
+  preserve_original_links: true
+  include_images_inline: true
+  generate_table_of_contents: true
+  use_normal_paragraph_spacing: true
+  avoid_excessive_line_breaks: true
+  keep_source_coverage_under_50_percent: true
+  keep_structure_close_to_source: true
+  include_editors_note: true
+
+codex_execution:
+  required_steps:
+    - Read codex-handoff.yaml.
+    - Read README.md as the article body.
+    - Fetch original source images listed in source-images.yaml and insert them into the matching sections when appropriate.
+    - Generate visual cards from the specs listed in visual-card-manifest.yaml, following the AI Native Research visual design guideline.
+    - Insert generated visual cards after the specified sections.
+    - Create a Feishu document in the specified space and folder.
+    - Preserve all original links.
+    - Render headings and TOC cleanly.
+    - Return the Feishu doc URL and publication status.
