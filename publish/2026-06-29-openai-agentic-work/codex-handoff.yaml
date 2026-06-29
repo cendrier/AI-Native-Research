@@ -45,14 +45,21 @@ publishing_rules:
   avoid_excessive_line_breaks: true
   keep_source_coverage_under_50_percent: true
   keep_structure_close_to_source: true
-  include_editors_note: true
+  human_readable_first: true
+  omit_case_and_pattern_sections: true
+  use_article_sections:
+    - 原文信息
+    - 核心洞察
+    - 重点内容
+    - 给我们的启示
+    - 延伸阅读
 
 codex_execution:
   required_steps:
     - Read codex-handoff.yaml.
-    - Read README.md as the article body.
+    - Read README.md as the article body. Do not reintroduce Case or Pattern sections.
     - Fetch original source images listed in source-images.yaml and insert them into the matching sections when appropriate.
-    - Generate visual cards from the specs listed in visual-card-manifest.yaml, following the AI Native Research visual design guideline.
+    - Generate visual cards from the specs listed in visual-card-manifest.yaml, following docs/AI_NATIVE_RESEARCH_VISUAL_STYLE_V1.md.
     - Insert generated visual cards after the specified sections.
     - Create a Feishu document in the specified space and folder.
     - Preserve all original links.
