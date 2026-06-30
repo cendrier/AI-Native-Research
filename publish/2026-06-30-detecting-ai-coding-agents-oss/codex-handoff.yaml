@@ -1,0 +1,120 @@
+task: publish_feishu_article
+version: v1
+
+article:
+  title: "AI Coding Agent 正在进入开源供应链：180M 仓库普查说明了什么"
+  date: "2026-06-30"
+  category: "AI Native Engineering"
+  type: "Daily Research Brief"
+  language: "zh-CN"
+  publish_priority: "tier0_special_attention"
+
+source:
+  primary:
+    title: "Detecting AI Coding Agents in Open Source: A Validated Multi-Method Census of 180 Million Repositories"
+    publisher: "arXiv"
+    url: "https://arxiv.org/abs/2606.24429"
+    pdf_url: "https://arxiv.org/pdf/2606.24429"
+    published_at: "2026-06-23"
+  supporting:
+    - title: "AIDev: Studying AI Coding Agents on GitHub"
+      publisher: "arXiv"
+      url: "https://arxiv.org/abs/2602.09185"
+      published_at: "2026-02-09"
+    - title: "Agentic Much? Adoption of Coding Agents on GitHub"
+      publisher: "arXiv"
+      url: "https://arxiv.org/abs/2601.18341"
+      published_at: "2026-01-26"
+
+files:
+  root: "publish/2026-06-30-detecting-ai-coding-agents-oss"
+  markdown: "publish/2026-06-30-detecting-ai-coding-agents-oss/README.md"
+  metadata: "publish/2026-06-30-detecting-ai-coding-agents-oss/metadata.yaml"
+  source: "publish/2026-06-30-detecting-ai-coding-agents-oss/source.md"
+  source_images: "publish/2026-06-30-detecting-ai-coding-agents-oss/assets/source-images.yaml"
+  visual_cards_manifest: "publish/2026-06-30-detecting-ai-coding-agents-oss/assets/visual-card-manifest.yaml"
+  publish_status: "publish/2026-06-30-detecting-ai-coding-agents-oss/publish-status.yaml"
+
+feishu:
+  space: "AI Native Research"
+  folder: "Daily Briefs/2026-06"
+  visibility: "internal"
+  create_new_doc: true
+  title_format: "2026-06-30｜AI Coding Agent 正在进入开源供应链：180M 仓库普查说明了什么"
+  cover_image: "assets/card-01-census-map.png"
+
+recommended_document_structure:
+  - "Title"
+  - "⭐ Tier 0 Special Attention"
+  - "原文信息"
+  - "核心洞察"
+  - "重点内容"
+  - "给我们的启示"
+  - "延伸阅读"
+
+image_and_card_plan:
+  generated_cards:
+    - path: "assets/card-01-census-map.png"
+      spec: "assets/card-01-census-map.spec.md"
+      insert_after: "## 核心洞察"
+    - path: "assets/card-02-channel-disconnect.png"
+      spec: "assets/card-02-channel-disconnect.spec.md"
+      insert_after: "### 4. PR 视角和 Commit 视角几乎看到两个世界"
+    - path: "assets/card-03-engineering-playbook.png"
+      spec: "assets/card-03-engineering-playbook.spec.md"
+      insert_after: "## 给我们的启示"
+  optional_source_images:
+    - id: "source-figure-01"
+      insert_after: "### 2. 四类痕迹：从 Bot 账号到静默配置文件"
+      required: false
+    - id: "source-table-01"
+      insert_after: "### 3. 180M+ 仓库普查看到的关键数字"
+      required: false
+
+publishing_rules:
+  preserve_original_links: true
+  include_images_inline: true
+  generate_table_of_contents: true
+  use_normal_paragraph_spacing: true
+  avoid_excessive_line_breaks: true
+  keep_source_coverage_under_50_percent: true
+  keep_structure_close_to_source: true
+  human_readable_first: true
+  omit_case_and_pattern_sections: true
+  include_tier0_special_attention: true
+  use_article_sections:
+    - "⭐ Tier 0 Special Attention"
+    - "原文信息"
+    - "核心洞察"
+    - "重点内容"
+    - "给我们的启示"
+    - "延伸阅读"
+
+codex_execution:
+  required_steps:
+    - "Read codex-handoff.yaml."
+    - "Read README.md as the article body. Do not reintroduce Editor's Note, 为什么值得读, Case, or Pattern sections."
+    - "Read docs/AI_NATIVE_RESEARCH_VISUAL_STYLE_V1.md before generating cards."
+    - "Generate all required visual cards from assets/visual-card-manifest.yaml and each card spec."
+    - "Optionally extract source images from assets/source-images.yaml. Do not block if PDF extraction fails."
+    - "Insert generated visual cards exactly after the headings specified in image_and_card_plan."
+    - "Create a Feishu document in the specified space and folder."
+    - "Preserve original links and render headings cleanly."
+    - "Update publish-status.yaml with status, Feishu URL, generated card list, and any extraction notes."
+  success_status_template: |
+    status: published
+    published_at: "<ISO8601 Asia/Shanghai timestamp>"
+    feishu_url: "<Feishu doc URL>"
+    feishu_location: "AI Native Research/Daily Briefs/2026-06"
+    cards_generated:
+      - assets/card-01-census-map.png
+      - assets/card-02-channel-disconnect.png
+      - assets/card-03-engineering-playbook.png
+    cards_inserted: true
+    source_images_inserted: "<true|false>"
+    notes: "<short notes>"
+  failure_status_template: |
+    status: failed
+    failed_at: "<ISO8601 Asia/Shanghai timestamp>"
+    error_stage: "card_generation | source_image_extraction | feishu_upload | permission | unknown"
+    error_message: "<short actionable error>"
