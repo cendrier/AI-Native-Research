@@ -1,0 +1,27 @@
+visual_cards:
+  - id: card-01-census-map
+    output_path: "publish/2026-06-30-detecting-ai-coding-agents-oss/assets/card-01-census-map.png"
+    spec_path: "publish/2026-06-30-detecting-ai-coding-agents-oss/assets/card-01-census-map.spec.md"
+    insertion_after_heading: "## 核心洞察"
+    required: true
+    purpose: "Executive summary card showing why single-channel measurement undercounts AI coding agent adoption."
+
+  - id: card-02-channel-disconnect
+    output_path: "publish/2026-06-30-detecting-ai-coding-agents-oss/assets/card-02-channel-disconnect.png"
+    spec_path: "publish/2026-06-30-detecting-ai-coding-agents-oss/assets/card-02-channel-disconnect.spec.md"
+    insertion_after_heading: "### 4. PR 视角和 Commit 视角几乎看到两个世界"
+    required: true
+    purpose: "Comparison card for PR-based versus commit-based visibility and deployment-mode bias."
+
+  - id: card-03-engineering-playbook
+    output_path: "publish/2026-06-30-detecting-ai-coding-agents-oss/assets/card-03-engineering-playbook.png"
+    spec_path: "publish/2026-06-30-detecting-ai-coding-agents-oss/assets/card-03-engineering-playbook.spec.md"
+    insertion_after_heading: "## 给我们的启示"
+    required: true
+    purpose: "Practical governance card for internal AI coding attribution and measurement."
+
+style_reference: "docs/AI_NATIVE_RESEARCH_VISUAL_STYLE_V1.md"
+rendering_notes:
+  - "Use Chinese text on cards."
+  - "Keep cards clean and high-contrast for Feishu document reading."
+  - "Do not include dense academic tables; extract only the strongest numbers."
