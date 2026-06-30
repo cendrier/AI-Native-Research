@@ -1,0 +1,24 @@
+source_images:
+  - id: source-figure-01
+    title: "Figure 1: Overview of the multi-method AI-agent detection framework"
+    source: "arXiv PDF"
+    url: "https://arxiv.org/pdf/2606.24429"
+    source_page: 3
+    original_caption: "Overview of the multi-method AI-agent detection framework."
+    insertion_after_heading: "### 2. 四类痕迹：从 Bot 账号到静默配置文件"
+    usage: "Optional. Use only if Codex can reliably extract or screenshot the figure. If extraction is unreliable, skip source image and rely on generated visual cards."
+    crop_hint: "Figure 1 block showing World of Code, Type A-D detection channels, 30x undercount, and channel disconnect."
+    required: false
+
+  - id: source-table-01
+    title: "Table 1: Prevalence of twelve AI coding agents"
+    source: "arXiv PDF"
+    url: "https://arxiv.org/pdf/2606.24429"
+    source_page_hint: "Results section / Table 1"
+    insertion_after_heading: "### 3. 180M+ 仓库普查看到的关键数字"
+    usage: "Optional. Prefer a concise generated card over a raw table if Feishu readability is poor."
+    required: false
+
+notes:
+  - "Do not block publishing if PDF image extraction fails."
+  - "Generated visual cards are required; source images are optional support material."
