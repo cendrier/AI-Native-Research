@@ -1,0 +1,8 @@
+status: pending
+producer: chatgpt
+next_actor: codex
+task: publish_feishu_article
+created_at: "2026-06-30T08:27:24+08:00"
+root: "publish/2026-06-30-detecting-ai-coding-agents-oss"
+article_title: "AI Coding Agent 正在进入开源供应链：180M 仓库普查说明了什么"
+notes: "Ready for Codex. This article intentionally replaces the already-published 2026-06-29 OpenAI/Codex piece with a different Tier-0 methodology/census source."
