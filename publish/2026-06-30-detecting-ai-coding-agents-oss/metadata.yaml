@@ -1,0 +1,61 @@
+title: "AI Coding Agent 正在进入开源供应链：180M 仓库普查说明了什么"
+date: "2026-06-30"
+category: "AI Native Engineering"
+type: "Daily Research Brief"
+language: "zh-CN"
+publish_priority: "tier0_special_attention"
+slug: "detecting-ai-coding-agents-oss"
+status: "ready_for_codex"
+producer: "chatgpt"
+
+source:
+  title: "Detecting AI Coding Agents in Open Source: A Validated Multi-Method Census of 180 Million Repositories"
+  publisher: "arXiv"
+  authors:
+    - "Arsham Khosravani"
+    - "Audris Mockus"
+  url: "https://arxiv.org/abs/2606.24429"
+  pdf_url: "https://arxiv.org/pdf/2606.24429"
+  published_at: "2026-06-23"
+  source_type: "major methodology paper / ecosystem census"
+
+selection:
+  reason: "High-signal methodology paper for measuring AI coding agent adoption across the open-source supply chain; avoids repeating the already-published OpenAI/Codex agentic work article."
+  tier0_special_attention: true
+  tier0_reason: "Major methodology/census paper with 180M+ repository scope, multi-method detection framework, hand validation, and implications for AI coding governance."
+  freshness_window_days: 7
+  searched_on: "2026-06-30"
+
+topics:
+  - "AI coding agents"
+  - "agentic software engineering"
+  - "open-source supply chain"
+  - "developer productivity measurement"
+  - "AI attribution metadata"
+  - "engineering governance"
+
+key_metrics:
+  repositories_analyzed: "180M+ Git repositories"
+  validation_labels: 495
+  claude_code_multimethod_commits_v2510: 850157
+  claude_code_bot_only_commits_v2510: 28154
+  relative_recall_gap: "30x"
+  commit_attributed_agents_monthly_commits_v2604: "320K+"
+  claude_code_commits_v2604: 886122
+  claude_code_projects_v2604: 17295
+  claude_silent_projects_v2604: 21078
+
+reader_sections:
+  - "⭐ Tier 0 Special Attention"
+  - "原文信息"
+  - "核心洞察"
+  - "重点内容"
+  - "给我们的启示"
+  - "延伸阅读"
+
+codex:
+  root: "publish/2026-06-30-detecting-ai-coding-agents-oss"
+  markdown: "publish/2026-06-30-detecting-ai-coding-agents-oss/README.md"
+  handoff: "publish/2026-06-30-detecting-ai-coding-agents-oss/codex-handoff.yaml"
+  visual_style: "docs/AI_NATIVE_RESEARCH_VISUAL_STYLE_V1.md"
+  runbook: "docs/CODEX_FEISHU_PUBLISHING_RUNBOOK.md"
