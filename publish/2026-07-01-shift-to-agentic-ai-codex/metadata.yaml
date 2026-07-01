@@ -1,0 +1,63 @@
+date: 2026-07-01
+slug: shift-to-agentic-ai-codex
+package_path: publish/2026-07-01-shift-to-agentic-ai-codex
+status: pending
+producer: chatgpt
+next_actor: codex
+topic: AI Native Engineering / AI coding / agentic workflows
+language: zh-CN
+publish_type: tier0_special_topic
+feishu:
+  target_title: "从聊天到派工：OpenAI Codex 数据揭示 Agentic AI 的真实组织形态"
+  target_space: internal_feishu_space
+  target_folder: AI Native Research
+source:
+  title: "The Shift to Agentic AI: Evidence from Codex"
+  source: "arXiv"
+  publication_date: 2026-06-25
+  url: "https://arxiv.org/abs/2606.26959"
+  pdf_url: "https://arxiv.org/pdf/2606.26959"
+  organizations:
+    - OpenAI
+    - Columbia Business School
+    - University of Pennsylvania Wharton
+    - Duke Fuqua School of Business
+  authors:
+    - Drew Johnston
+    - David Holtz
+    - Alex Martin Richmond
+    - Christopher Ong
+    - Prasanna Tambe
+    - Aaron Chatterji
+tier0:
+  is_tier0: true
+  label: "⭐ Tier 0 Special Attention"
+  reason: "A major methodology and empirical usage paper analyzing OpenAI Codex data across individual users, organizational users, and OpenAI workers. It introduces practical measurement dimensions for agentic AI adoption: task complexity, runtime, concurrency, workflow reuse, and production output."
+  selected_over:
+    - "AWS forward-deployed AI engineers Reuters report, 2026-06-30: important industry signal but secondary news source rather than methodology report."
+    - "OpenAI Codex usage-limit incident coverage, 2026-06-30: operationally interesting but less suitable for a deep internal methodology article."
+    - "Cursor / human review coverage, 2026-06-29: relevant but currently not as primary-source-rich as the Codex empirical paper."
+avoid_repetition_note: "Previous package covered open-source detection/attribution of AI coding agents. This package shifts to organizational adoption and workflow redesign evidence from Codex usage data."
+reader_structure:
+  - Title
+  - 原文信息
+  - "⭐ Tier 0 Special Attention"
+  - 核心洞察
+  - 重点内容
+  - 给我们的启示
+  - 延伸阅读
+visual_style: "AI Native Research V1"
+canonical_style_file: "docs/AI_NATIVE_RESEARCH_VISUAL_STYLE_V1.md"
+canonical_runbook: "docs/CODEX_FEISHU_PUBLISHING_RUNBOOK.md"
+created_files:
+  - publish/2026-07-01-shift-to-agentic-ai-codex/README.md
+  - publish/2026-07-01-shift-to-agentic-ai-codex/metadata.yaml
+  - publish/2026-07-01-shift-to-agentic-ai-codex/source.md
+  - publish/2026-07-01-shift-to-agentic-ai-codex/codex-handoff.yaml
+  - publish/2026-07-01-shift-to-agentic-ai-codex/publish-status.yaml
+  - publish/2026-07-01-shift-to-agentic-ai-codex/assets/source-images.yaml
+  - publish/2026-07-01-shift-to-agentic-ai-codex/assets/visual-card-manifest.yaml
+  - publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-01-agentic-shift-map.spec.md
+  - publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-02-adoption-depth-metrics.spec.md
+  - publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-03-supervisory-workflow.spec.md
+  - publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-04-organization-playbook.spec.md
