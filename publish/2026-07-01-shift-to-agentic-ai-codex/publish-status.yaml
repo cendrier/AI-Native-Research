@@ -1,0 +1,9 @@
+status: pending
+producer: chatgpt
+next_actor: codex
+task: publish_feishu_article
+package_path: publish/2026-07-01-shift-to-agentic-ai-codex
+created_at: "2026-07-01"
+source_title: "The Shift to Agentic AI: Evidence from Codex"
+tier0: true
+notes: "Daily AI Native Engineering package prepared by ChatGPT. Codex should generate visual cards and publish to Feishu using codex-handoff.yaml."
