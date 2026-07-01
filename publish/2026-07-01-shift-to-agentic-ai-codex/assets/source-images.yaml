@@ -1,0 +1,39 @@
+source_pdf: "https://arxiv.org/pdf/2606.26959"
+source_url: "https://arxiv.org/abs/2606.26959"
+usage_policy: "Optional. Prefer generated Chinese visual cards. If original source figures are used, crop from the source PDF and place near the matching evidence section. Keep all source attribution visible or add a caption with source URL."
+images:
+  - id: fig-01-codex-vs-chatgpt
+    title: "Fig. 1: Codex usage relative to ChatGPT, by user population"
+    pdf_page_number: 7
+    zero_indexed_page_for_screenshot_tools: 6
+    recommended_insert_after_heading: "## 核心洞察"
+    caption_cn: "Codex 相对 ChatGPT 的活跃用户与输出 token 占比，按个人用户、组织用户和 OpenAI 内部用户区分。"
+    use: optional
+  - id: fig-02-growth-persona
+    title: "Fig. 2: Growth in active Codex users by account type and persona"
+    pdf_page_number: 8
+    zero_indexed_page_for_screenshot_tools: 7
+    recommended_insert_after_heading: "### 2. Adoption 的差异说明：模型能力不是瓶颈的全部，组织上下文才是放大器"
+    caption_cn: "Codex 用户增长按 account type 与 persona 拆分，显示 non-developer 使用增长很快。"
+    use: optional
+  - id: fig-06-task-complexity
+    title: "Fig. 6: Model-estimated complexity of Codex turns among Individual account users"
+    pdf_page_number: 14
+    zero_indexed_page_for_screenshot_tools: 13
+    recommended_insert_after_heading: "### 4. 任务复杂度正在上升：用户开始把“大块工作”交给 agent"
+    caption_cn: "用户提交更复杂任务的比例上升，尤其是估计需要 8 小时以上的人类任务。"
+    use: optional
+  - id: fig-09-concurrency
+    title: "Fig. 9: Codex turn concurrency"
+    pdf_page_number: 17
+    zero_indexed_page_for_screenshot_tools: 16
+    recommended_insert_after_heading: "### 5. 并行 agent 与长运行任务：人类角色变成 dispatch、review、integration"
+    caption_cn: "OpenAI 内部用户已经明显形成多 agent 并行工作方式。"
+    use: optional
+  - id: fig-11-skill-use
+    title: "Fig. 11: Skill use over time and by account category"
+    pdf_page_number: 20
+    zero_indexed_page_for_screenshot_tools: 19
+    recommended_insert_after_heading: "### 6. Skills/plugins：把临时 prompt 变成组织级生产系统"
+    caption_cn: "Skill 使用率快速上升，OpenAI 内部几乎普及。"
+    use: optional
