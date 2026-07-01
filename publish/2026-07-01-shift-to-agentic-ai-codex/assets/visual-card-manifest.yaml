@@ -1,0 +1,29 @@
+style: "AI Native Research V1"
+style_guide: docs/AI_NATIVE_RESEARCH_VISUAL_STYLE_V1.md
+canvas: "1600x900, 16:9 horizontal"
+rendering_preference: "Prefer deterministic HTML/SVG/Canvas/Python/PPT rendering for stable Chinese text. Use image generation only if deterministic rendering is unavailable."
+cards:
+  - id: card-01-agentic-shift-map
+    title: "从聊天到派工"
+    spec: publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-01-agentic-shift-map.spec.md
+    output: publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-01-agentic-shift-map.png
+    insert_after_heading: "## ⭐ Tier 0 Special Attention"
+    priority: high
+  - id: card-02-adoption-depth-metrics
+    title: "Agentic adoption 的三层强度"
+    spec: publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-02-adoption-depth-metrics.spec.md
+    output: publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-02-adoption-depth-metrics.png
+    insert_after_heading: "## 核心洞察"
+    priority: high
+  - id: card-03-supervisory-workflow
+    title: "从工程师到 agent portfolio manager"
+    spec: publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-03-supervisory-workflow.spec.md
+    output: publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-03-supervisory-workflow.png
+    insert_after_heading: "### 5. 并行 agent 与长运行任务：人类角色变成 dispatch、review、integration"
+    priority: high
+  - id: card-04-organization-playbook
+    title: "AI Native Engineering 落地手册"
+    spec: publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-04-organization-playbook.spec.md
+    output: publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-04-organization-playbook.png
+    insert_after_heading: "## 给我们的启示"
+    priority: medium
