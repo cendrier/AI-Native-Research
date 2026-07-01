@@ -1,0 +1,79 @@
+package_path: publish/2026-07-01-shift-to-agentic-ai-codex
+status_file: publish/2026-07-01-shift-to-agentic-ai-codex/publish-status.yaml
+next_actor: codex
+task: publish_feishu_article
+
+feishu:
+  title: "从聊天到派工：OpenAI Codex 数据揭示 Agentic AI 的真实组织形态"
+  space: internal_feishu_space
+  folder: AI Native Research
+  document_type: internal_article
+  language: zh-CN
+
+source_files:
+  article_body: publish/2026-07-01-shift-to-agentic-ai-codex/README.md
+  metadata: publish/2026-07-01-shift-to-agentic-ai-codex/metadata.yaml
+  source_notes: publish/2026-07-01-shift-to-agentic-ai-codex/source.md
+  source_images: publish/2026-07-01-shift-to-agentic-ai-codex/assets/source-images.yaml
+  visual_card_manifest: publish/2026-07-01-shift-to-agentic-ai-codex/assets/visual-card-manifest.yaml
+  style_guide: docs/AI_NATIVE_RESEARCH_VISUAL_STYLE_V1.md
+  runbook: docs/CODEX_FEISHU_PUBLISHING_RUNBOOK.md
+
+required_document_structure:
+  - "# 从聊天到派工：OpenAI Codex 数据揭示 Agentic AI 的真实组织形态"
+  - "## 原文信息"
+  - "## ⭐ Tier 0 Special Attention"
+  - "## 核心洞察"
+  - "## 重点内容"
+  - "### 1. 从 conversational AI 到 agentic AI：单位从“对话”变成“被委托的工作流”"
+  - "### 2. Adoption 的差异说明：模型能力不是瓶颈的全部，组织上下文才是放大器"
+  - "### 3. 软件工程是 leading edge，但不是终点"
+  - "### 4. 任务复杂度正在上升：用户开始把“大块工作”交给 agent"
+  - "### 5. 并行 agent 与长运行任务：人类角色变成 dispatch、review、integration"
+  - "### 6. Skills/plugins：把临时 prompt 变成组织级生产系统"
+  - "## 给我们的启示"
+  - "## 延伸阅读"
+
+visual_cards:
+  - id: card-01-agentic-shift-map
+    spec: publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-01-agentic-shift-map.spec.md
+    output: publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-01-agentic-shift-map.png
+    insert_after_heading: "## ⭐ Tier 0 Special Attention"
+    purpose: "Explain the shift from chat to delegated production."
+  - id: card-02-adoption-depth-metrics
+    spec: publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-02-adoption-depth-metrics.spec.md
+    output: publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-02-adoption-depth-metrics.png
+    insert_after_heading: "## 核心洞察"
+    purpose: "Summarize the most important adoption and intensity metrics."
+  - id: card-03-supervisory-workflow
+    spec: publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-03-supervisory-workflow.spec.md
+    output: publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-03-supervisory-workflow.png
+    insert_after_heading: "### 5. 并行 agent 与长运行任务：人类角色变成 dispatch、review、integration"
+    purpose: "Show how heavy users manage portfolios of agentic work."
+  - id: card-04-organization-playbook
+    spec: publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-04-organization-playbook.spec.md
+    output: publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-04-organization-playbook.png
+    insert_after_heading: "## 给我们的启示"
+    purpose: "Translate the paper into an AI Native Engineering operating playbook."
+
+source_images:
+  use_policy: "Optional. Prefer generated Chinese visual cards. Use original source figures only if Feishu rendering benefits from exact evidence charts."
+  manifest: publish/2026-07-01-shift-to-agentic-ai-codex/assets/source-images.yaml
+
+codex_instructions:
+  - "Read docs/CODEX_FEISHU_PUBLISHING_RUNBOOK.md before publishing."
+  - "Read docs/AI_NATIVE_RESEARCH_VISUAL_STYLE_V1.md before generating any visual card."
+  - "Use README.md as the authoritative article body. Preserve source links."
+  - "Generate PNG cards from the four spec files. Prefer deterministic rendering via HTML/SVG/Canvas/Python/PPT if it keeps Chinese text stable."
+  - "Insert each card immediately after the specified heading. Do not place all cards at the end."
+  - "Use normal paragraph spacing in Feishu. Avoid excessive line breaks."
+  - "Do not create separate Editor's Note, 为什么值得读, Case, or Pattern sections."
+  - "After successful publishing, update publish-status.yaml with status: published, published_at, feishu_url, cards_generated, and notes."
+  - "If publishing fails, update publish-status.yaml with status: failed, error_stage, error_message, and next_action."
+
+expected_outputs:
+  - publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-01-agentic-shift-map.png
+  - publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-02-adoption-depth-metrics.png
+  - publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-03-supervisory-workflow.png
+  - publish/2026-07-01-shift-to-agentic-ai-codex/assets/card-04-organization-playbook.png
+  - updated publish/2026-07-01-shift-to-agentic-ai-codex/publish-status.yaml
