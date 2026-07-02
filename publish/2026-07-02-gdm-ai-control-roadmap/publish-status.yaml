@@ -1,0 +1,15 @@
+status: pending
+producer: chatgpt
+next_actor: codex
+task: publish_feishu_article
+package_path: publish/2026-07-02-gdm-ai-control-roadmap
+created_at: 2026-07-02
+source_title: Securing the future of AI agents / GDM AI Control Roadmap
+tier: 0
+notes:
+  - New topic for daily workflow; not a repeat of OpenAI Codex adoption or open-source agent attribution topics.
+  - Codex should generate visual cards, extract source evidence images, publish to Feishu, and update this file.
+feishu_url: null
+published_at: null
+error_stage: null
+error_message: null
