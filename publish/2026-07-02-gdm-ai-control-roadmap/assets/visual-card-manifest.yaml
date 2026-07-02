@@ -1,0 +1,37 @@
+visual_cards:
+  - id: card-01-agent-control-map
+    title: "Agent Control Map"
+    spec_path: publish/2026-07-02-gdm-ai-control-roadmap/assets/card-01-agent-control-map.spec.md
+    output_path: publish/2026-07-02-gdm-ai-control-roadmap/assets/card-01-agent-control-map.png
+    insert_after_heading: ⭐ Tier 0 Special Attention
+    purpose: Explain why AI coding agents require a control layer beyond alignment.
+    style: AI Native Research V1
+  - id: card-02-detection-response-ladders
+    title: "D1-D4 x R1-R3 Ladders"
+    spec_path: publish/2026-07-02-gdm-ai-control-roadmap/assets/card-02-detection-response-ladders.spec.md
+    output_path: publish/2026-07-02-gdm-ai-control-roadmap/assets/card-02-detection-response-ladders.png
+    insert_after_heading: 核心洞察
+    purpose: Summarize detection and response capability ladders.
+    style: AI Native Research V1
+  - id: card-03-ai-native-engineering-control-plane
+    title: "AI Native Engineering Control Plane"
+    spec_path: publish/2026-07-02-gdm-ai-control-roadmap/assets/card-03-ai-native-engineering-control-plane.spec.md
+    output_path: publish/2026-07-02-gdm-ai-control-roadmap/assets/card-03-ai-native-engineering-control-plane.png
+    insert_after_heading: 给我们的启示
+    purpose: Translate the DeepMind roadmap into an internal engineering control plane.
+    style: AI Native Research V1
+  - id: card-04-rollout-checklist
+    title: "Agent Control Rollout Checklist"
+    spec_path: publish/2026-07-02-gdm-ai-control-roadmap/assets/card-04-rollout-checklist.spec.md
+    output_path: publish/2026-07-02-gdm-ai-control-roadmap/assets/card-04-rollout-checklist.png
+    insert_after_paragraph_contains: 短期落地可以从四件事开始
+    purpose: Provide a practical checklist for teams introducing coding agents.
+    style: AI Native Research V1
+rules:
+  canonical_style_file: docs/AI_NATIVE_RESEARCH_VISUAL_STYLE_V1.md
+  output_format: png
+  generate_all: true
+  keep_text_readable: true
+  avoid_decorative_only_images: true
+  use_cards_as_research_artifacts: true
+  do_not_repeat_source_screenshots_as_cards: true
