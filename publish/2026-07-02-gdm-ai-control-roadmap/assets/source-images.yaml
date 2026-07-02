@@ -1,0 +1,33 @@
+source_images:
+  - id: source-report-cover
+    type: pdf_page_screenshot
+    source_url: https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/securing-the-future-of-ai-agents/gdm-ai-control-roadmap.pdf
+    page: 1
+    output_path: publish/2026-07-02-gdm-ai-control-roadmap/assets/source/report-cover.png
+    caption: "Source evidence: GDM AI Control Roadmap cover, Google DeepMind, 2026-06-22."
+    insert_after_heading: 原文信息
+    usage: evidence
+  - id: source-detection-table
+    type: pdf_page_screenshot_crop
+    source_url: https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/securing-the-future-of-ai-agents/gdm-ai-control-roadmap.pdf
+    page: 20
+    crop_hint: "Table 14 | Overview of Detection levels, D1-D4."
+    output_path: publish/2026-07-02-gdm-ai-control-roadmap/assets/source/detection-levels-table.png
+    caption: "Source evidence: Detection levels D1-D4 from GDM AI Control Roadmap."
+    insert_after_heading: 重点内容
+    insert_after_subheading: "4. D1-D4：检测能力要随模型能力升级"
+    usage: evidence
+  - id: source-response-table
+    type: pdf_page_screenshot_crop
+    source_url: https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/securing-the-future-of-ai-agents/gdm-ai-control-roadmap.pdf
+    page: 21
+    crop_hint: "Table 15 | Overview of Prevention and Response levels, R1-R3."
+    output_path: publish/2026-07-02-gdm-ai-control-roadmap/assets/source/prevention-response-table.png
+    caption: "Source evidence: Prevention and Response levels R1-R3 from GDM AI Control Roadmap."
+    insert_after_heading: 重点内容
+    insert_after_subheading: "5. R1-R3：响应机制从事后告警走向实时拦截和关闭"
+    usage: evidence
+notes:
+  - Source screenshots should preserve the original report look and should not be visually restyled.
+  - If cropping is unreliable, insert the full page screenshot and use the caption to guide readers.
+  - Do not upload source PDF itself to Feishu unless needed; use screenshots and links.
