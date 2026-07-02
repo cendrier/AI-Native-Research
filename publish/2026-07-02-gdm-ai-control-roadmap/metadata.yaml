@@ -1,0 +1,76 @@
+id: 2026-07-02-gdm-ai-control-roadmap
+slug: gdm-ai-control-roadmap
+date: 2026-07-02
+producer: chatgpt
+next_actor: codex
+status: pending
+language: zh-CN
+content_type: tier0_special_analysis
+series: AI Native Engineering Daily
+tier: 0
+priority: high
+replace_previous_topic: false
+avoid_repetition_notes:
+  - 2026-06-30 package covered open-source AI coding agent attribution and census.
+  - 2026-07-01 package covered OpenAI Codex usage and organizational adoption.
+  - This package shifts to agent control, security, monitoring, access control, and production governance.
+source:
+  title: Securing the future of AI agents / GDM AI Control Roadmap
+  organization: Google DeepMind
+  source_type: official_blog_and_technical_report
+  blog_url: https://deepmind.google/blog/securing-the-future-of-ai-agents/
+  report_url: https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/securing-the-future-of-ai-agents/gdm-ai-control-roadmap.pdf
+  publication_date_blog: 2026-06-18
+  publication_date_report: 2026-06-22
+  authors:
+    - Rohin Shah
+    - Four Flynn
+    - Mary Phuong
+    - Erik Jenner
+    - Laurent Simon
+    - Lewis Ho
+    - Sebastian Farquhar
+    - Scott Coull
+secondary_sources:
+  - title: The Three Layers of Agent Security
+    source: Google DeepMind
+    url: https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/securing-the-future-of-ai-agents/three-layers-of-agent-security.pdf
+    publication_date: 2026-06
+  - title: Google DeepMind prepares for rogue AI agents
+    source: Axios
+    url: https://www.axios.com/2026/06/18/google-deepmind-prepares-for-rogue-ai-agents
+    publication_date: 2026-06-18
+article:
+  target_feishu_title: 从代码生成到 Agent Control：Google DeepMind 给 AI 编程代理补上安全操作系统
+  target_audience:
+    - engineering_leaders
+    - ai_native_engineering
+    - platform_engineering
+    - security_engineering
+    - developer_productivity
+  tags:
+    - AI Native Engineering
+    - AI Coding
+    - Agentic Engineering
+    - Agent Security
+    - Developer Productivity
+    - Engineering Effectiveness
+    - Google DeepMind
+    - Tier 0
+  summary: Google DeepMind 的 AI Control Roadmap 把内部 AI agents 当作潜在 insider threat 管理，提出 TRAIT&R 威胁模型、D1-D4 检测能力梯度、R1-R3 响应能力梯度，以及覆盖率、召回率、响应时间等可量化控制指标。对 AI Native Engineering 来说，它把“代码审查”升级为“agent 控制面”。
+visuals:
+  source_images_allowed: true
+  generate_visual_cards: true
+  canonical_style_file: docs/AI_NATIVE_RESEARCH_VISUAL_STYLE_V1.md
+  runbook_file: docs/CODEX_FEISHU_PUBLISHING_RUNBOOK.md
+files:
+  article: publish/2026-07-02-gdm-ai-control-roadmap/source.md
+  handoff: publish/2026-07-02-gdm-ai-control-roadmap/codex-handoff.yaml
+  status: publish/2026-07-02-gdm-ai-control-roadmap/publish-status.yaml
+  source_images: publish/2026-07-02-gdm-ai-control-roadmap/assets/source-images.yaml
+  visual_manifest: publish/2026-07-02-gdm-ai-control-roadmap/assets/visual-card-manifest.yaml
+  card_specs:
+    - publish/2026-07-02-gdm-ai-control-roadmap/assets/card-01-agent-control-map.spec.md
+    - publish/2026-07-02-gdm-ai-control-roadmap/assets/card-02-detection-response-ladders.spec.md
+    - publish/2026-07-02-gdm-ai-control-roadmap/assets/card-03-ai-native-engineering-control-plane.spec.md
+    - publish/2026-07-02-gdm-ai-control-roadmap/assets/card-04-rollout-checklist.spec.md
