@@ -1,0 +1,71 @@
+id: 2026-07-03-aws-fde-agentic-ai-production
+slug: aws-fde-agentic-ai-production
+date: 2026-07-03
+producer: chatgpt
+next_actor: codex
+status: pending
+language: zh-CN
+content_type: tier0_special_analysis
+series: AI Native Engineering Daily
+tier: 0
+priority: high
+replace_previous_topic: false
+avoid_repetition_notes:
+  - 2026-06-30 package covered open-source AI coding agent attribution and census.
+  - 2026-07-01 package covered OpenAI Codex usage and organizational adoption.
+  - 2026-07-02 package covered Google DeepMind AI Control Roadmap and agent security control plane.
+  - This package shifts to enterprise deployment model, forward deployed engineering, semantic layer, self-sufficient AI-native organization building.
+source:
+  title: AWS invests $1 billion to embed AI forward deployed engineers with customers
+  organization: Amazon Web Services
+  source_type: official_announcement_and_engineering_methodology
+  url: https://www.aboutamazon.com/news/aws/aws-1-billion-forward-deployed-ai-engineers
+  publication_date: 2026-06-30
+  author: Francessca Vasquez, Vice President of Frontier AI Engineering and Services, AWS
+secondary_sources:
+  - title: AI-Driven Development Life Cycle: Reimagining Software Engineering
+    source: AWS DevOps & Developer Productivity Blog
+    url: https://aws.amazon.com/blogs/devops/ai-driven-development-life-cycle/
+    publication_date: 2025-07-31
+  - title: AWS is investing billions to put AI into production for the public sector
+    source: About Amazon / AWS
+    url: https://www.aboutamazon.com/news/aws/aws-summit-dc-2026-ai-cloud-public-sector
+    publication_date: 2026-07-01
+  - title: Amazon's AWS commits $1 billion toward new unit for embedded AI engineers
+    source: Reuters
+    url: https://www.reuters.com/business/retail-consumer/amazons-aws-commits-1-billion-toward-new-unit-embedded-ai-engineers-2026-06-30/
+    publication_date: 2026-06-30
+article:
+  target_feishu_title: AI 原生组织不是买模型，而是把工程师部署到业务现场：AWS FDE 的信号
+  target_audience:
+    - engineering_leaders
+    - ai_native_engineering
+    - platform_engineering
+    - developer_productivity
+    - enterprise_ai_adoption
+  tags:
+    - AI Native Engineering
+    - AI Coding
+    - Agentic Engineering
+    - Forward Deployed Engineering
+    - Developer Productivity
+    - Engineering Effectiveness
+    - AWS
+    - Tier 0
+  summary: AWS 投入 10 亿美元成立 Forward Deployed Engineering 组织，将数千名 AI 工程专家嵌入客户团队，用 purpose-built agents、AI-DLC、semantic layer 和客户自给自足机制，将企业 AI adoption 从工具采购推进到生产级组织能力建设。
+visuals:
+  source_images_allowed: true
+  generate_visual_cards: true
+  canonical_style_file: docs/AI_NATIVE_RESEARCH_VISUAL_STYLE_V1.md
+  runbook_file: docs/CODEX_FEISHU_PUBLISHING_RUNBOOK.md
+files:
+  article: publish/2026-07-03-aws-fde-agentic-ai-production/source.md
+  handoff: publish/2026-07-03-aws-fde-agentic-ai-production/codex-handoff.yaml
+  status: publish/2026-07-03-aws-fde-agentic-ai-production/publish-status.yaml
+  source_images: publish/2026-07-03-aws-fde-agentic-ai-production/assets/source-images.yaml
+  visual_manifest: publish/2026-07-03-aws-fde-agentic-ai-production/assets/visual-card-manifest.yaml
+  card_specs:
+    - publish/2026-07-03-aws-fde-agentic-ai-production/assets/card-01-fde-org-model.spec.md
+    - publish/2026-07-03-aws-fde-agentic-ai-production/assets/card-02-ai-dlc-flow.spec.md
+    - publish/2026-07-03-aws-fde-agentic-ai-production/assets/card-03-self-sufficiency-stack.spec.md
+    - publish/2026-07-03-aws-fde-agentic-ai-production/assets/card-04-ai-native-playbook.spec.md
