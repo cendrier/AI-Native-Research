@@ -1,0 +1,26 @@
+id: 2026-07-03-aws-fde-agentic-ai-production
+status: pending
+created_at: 2026-07-03
+created_by: chatgpt
+next_actor: codex
+completed_steps:
+  - tier0_scan
+  - source_selection
+  - date_verification
+  - publish_ready_article
+  - codex_handoff
+  - visual_card_specs
+pending_steps:
+  - generate_visual_cards
+  - extract_or_capture_source_images
+  - upload_feishu_document
+  - verify_feishu_formatting
+  - update_status_to_published
+source_selected:
+  title: AWS invests $1 billion to embed AI forward deployed engineers with customers
+  source: About Amazon / AWS
+  url: https://www.aboutamazon.com/news/aws/aws-1-billion-forward-deployed-ai-engineers
+  publication_date: 2026-06-30
+notes:
+  - Do not reuse the previous three topics: OSS AI-agent census, Codex usage evidence, GDM AI Control Roadmap.
+  - This package focuses on enterprise deployment model and AI-native organization building.
