@@ -1,0 +1,28 @@
+visual_cards:
+  - id: card-01-fde-org-model
+    title: 从买工具到部署工程能力
+    spec_file: publish/2026-07-03-aws-fde-agentic-ai-production/assets/card-01-fde-org-model.spec.md
+    insertion_after_heading: 核心洞察
+    purpose: Explain AWS FDE as an enterprise AI adoption model: embedded experts, purpose-built agents, business/engineering/security collaboration, production systems.
+  - id: card-02-ai-dlc-flow
+    title: AI-DLC：AI 执行，人类监督
+    spec_file: publish/2026-07-03-aws-fde-agentic-ai-production/assets/card-02-ai-dlc-flow.spec.md
+    insertion_after_heading: 4. AI-DLC 把传统 SDLC 改造成“AI 执行 + 人类监督”的节奏
+    purpose: Visualize AI-DLC phases and repeated human validation loop.
+  - id: card-03-self-sufficiency-stack
+    title: 自给自足栈：从 observer 到 autonomous operator
+    spec_file: publish/2026-07-03-aws-fde-agentic-ai-production/assets/card-03-self-sufficiency-stack.spec.md
+    insertion_after_heading: 2. 交付目标不是替客户做完，而是让客户留下能力
+    purpose: Show how each engagement leaves systems, semantic layer, runbooks, docs, champions, governance.
+  - id: card-04-ai-native-playbook
+    title: 给我们的 AI Native Engineering Playbook
+    spec_file: publish/2026-07-03-aws-fde-agentic-ai-production/assets/card-04-ai-native-playbook.spec.md
+    insertion_after_heading: 给我们的启示
+    purpose: Turn article insights into practical internal actions and metrics.
+style:
+  canonical_style_file: docs/AI_NATIVE_RESEARCH_VISUAL_STYLE_V1.md
+  preferred_style: clean_dense_informational_card
+  notes:
+    - Normal Feishu-friendly aspect ratio; use 16:9 or 4:3 depending on existing runbook standard.
+    - Avoid gimmicky cloud/vendor marketing look.
+    - Use concise Chinese labels and source attribution footer.
