@@ -1,0 +1,69 @@
+handoff_id: 2026-07-03-aws-fde-agentic-ai-production
+target_feishu_title: AI 原生组织不是买模型，而是把工程师部署到业务现场：AWS FDE 的信号
+target_space: internal_feishu_ai_native_engineering
+priority: high
+status: ready_for_codex
+
+source_files:
+  article_markdown: publish/2026-07-03-aws-fde-agentic-ai-production/source.md
+  metadata: publish/2026-07-03-aws-fde-agentic-ai-production/metadata.yaml
+  status: publish/2026-07-03-aws-fde-agentic-ai-production/publish-status.yaml
+  source_images: publish/2026-07-03-aws-fde-agentic-ai-production/assets/source-images.yaml
+  visual_manifest: publish/2026-07-03-aws-fde-agentic-ai-production/assets/visual-card-manifest.yaml
+  card_specs:
+    - publish/2026-07-03-aws-fde-agentic-ai-production/assets/card-01-fde-org-model.spec.md
+    - publish/2026-07-03-aws-fde-agentic-ai-production/assets/card-02-ai-dlc-flow.spec.md
+    - publish/2026-07-03-aws-fde-agentic-ai-production/assets/card-03-self-sufficiency-stack.spec.md
+    - publish/2026-07-03-aws-fde-agentic-ai-production/assets/card-04-ai-native-playbook.spec.md
+
+recommended_document_structure:
+  - Title
+  - ⭐ Tier 0 Special Attention
+  - 原文信息
+  - 核心洞察
+  - 重点内容
+  - 给我们的启示
+  - 延伸阅读
+
+visual_cards:
+  - id: card-01-fde-org-model
+    title: 从买工具到部署工程能力
+    spec_file: publish/2026-07-03-aws-fde-agentic-ai-production/assets/card-01-fde-org-model.spec.md
+    insert_after: 核心洞察
+  - id: card-03-self-sufficiency-stack
+    title: 自给自足栈：从 observer 到 autonomous operator
+    spec_file: publish/2026-07-03-aws-fde-agentic-ai-production/assets/card-03-self-sufficiency-stack.spec.md
+    insert_after: 2. 交付目标不是替客户做完，而是让客户留下能力
+  - id: card-02-ai-dlc-flow
+    title: AI-DLC：AI 执行，人类监督
+    spec_file: publish/2026-07-03-aws-fde-agentic-ai-production/assets/card-02-ai-dlc-flow.spec.md
+    insert_after: 4. AI-DLC 把传统 SDLC 改造成“AI 执行 + 人类监督”的节奏
+  - id: card-04-ai-native-playbook
+    title: 给我们的 AI Native Engineering Playbook
+    spec_file: publish/2026-07-03-aws-fde-agentic-ai-production/assets/card-04-ai-native-playbook.spec.md
+    insert_after: 给我们的启示
+
+source_image_plan:
+  - Extract or screenshot official AWS hero image from https://www.aboutamazon.com/news/aws/aws-1-billion-forward-deployed-ai-engineers if quality is good.
+  - Extract NFL IQ interface image for the case-study section if readable.
+  - Extract AI-DLC diagram from https://aws.amazon.com/blogs/devops/ai-driven-development-life-cycle/ only if it helps more than generated card 02.
+  - Always include source attribution captions and links.
+
+codex_instructions:
+  - Read source.md and preserve the reader-facing structure exactly.
+  - Keep normal paragraph spacing; avoid excessive one-line breaks.
+  - Generate four visual cards from the specs using the canonical visual style file docs/AI_NATIVE_RESEARCH_VISUAL_STYLE_V1.md.
+  - Place each card at the exact insertion location specified above; do not cluster cards at the end.
+  - Upload the final document to the internal Feishu AI Native Engineering space.
+  - Use the target Feishu title exactly.
+  - Verify source links and publication dates in the final Feishu document.
+  - After publishing, update publish-status.yaml with status: published, feishu_url, published_at, cards_generated, source_images_used, and any deviations.
+  - If a source image cannot be extracted cleanly, skip it rather than using a blurry screenshot; generated cards are sufficient.
+
+metadata_yaml:
+  id: 2026-07-03-aws-fde-agentic-ai-production
+  tier: 0
+  source_org: AWS
+  topic: Forward Deployed Engineering for agentic AI production
+  publication_date: 2026-06-30
+  feishu_title: AI 原生组织不是买模型，而是把工程师部署到业务现场：AWS FDE 的信号
