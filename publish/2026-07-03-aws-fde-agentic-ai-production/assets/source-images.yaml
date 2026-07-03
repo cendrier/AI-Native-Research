@@ -1,0 +1,25 @@
+source_images:
+  - id: source-hero-francessca-vasquez
+    source_url: https://www.aboutamazon.com/news/aws/aws-1-billion-forward-deployed-ai-engineers
+    source_caption: Francessca Vasquez, Vice President of Frontier AI Engineering and Services, AWS, presenting at AWS event.
+    suggested_use: Optional hero image near the top, after 原文信息 or Tier 0 section.
+    insertion_after_heading: 原文信息
+    rights_note: Official AWS/About Amazon editorial image. Use only with attribution and link back to source.
+  - id: source-collaboration-desk
+    source_url: https://www.aboutamazon.com/news/aws/aws-1-billion-forward-deployed-ai-engineers
+    source_caption: Two colleagues collaborating at a desk while looking at a computer screen.
+    suggested_use: Optional supporting image for FDE embedded-team section.
+    insertion_after_heading: 1. AWS 把 FDE 定义为“agentic-first”的生产交付组织
+    rights_note: Official AWS/About Amazon editorial image. Use only with attribution and link back to source.
+  - id: source-nfl-iq
+    source_url: https://www.aboutamazon.com/news/aws/aws-1-billion-forward-deployed-ai-engineers
+    source_caption: NFL IQ Draft Central interface displaying college football prospects and scouting metrics.
+    suggested_use: Optional proof image for NFL case section.
+    insertion_after_heading: 5. 案例信号：NFL、BMW、Lyft 体现了 FDE 的衡量方式
+    rights_note: Official AWS/About Amazon editorial image. Use only with attribution and link back to source.
+  - id: source-ai-dlc-diagram
+    source_url: https://aws.amazon.com/blogs/devops/ai-driven-development-life-cycle/
+    source_caption: AI-DLC diagrams for AI-centered development lifecycle, mental model, and three phases.
+    suggested_use: Use if source image quality is acceptable; otherwise generate visual card 02.
+    insertion_after_heading: 4. AI-DLC 把传统 SDLC 改造成“AI 执行 + 人类监督”的节奏
+    rights_note: Official AWS blog diagram. Use only with attribution and link back to source.
