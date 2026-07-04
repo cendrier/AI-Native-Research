@@ -1,0 +1,28 @@
+visual_cards:
+  - id: card-01-rollout-funnel
+    title: Rollout 三段漏斗：adoption / retention / outcome
+    spec_file: publish/2026-07-04-microsoft-cli-coding-agents-rollout/assets/card-01-rollout-funnel.spec.md
+    insertion_after_heading: 核心洞察
+    purpose: Explain the paper's measurement structure: first use, retained use, merged PR outcome, and why these must not be collapsed into a single activation metric.
+  - id: card-02-social-adoption-map
+    title: Agent 采用是社会扩散
+    spec_file: publish/2026-07-04-microsoft-cli-coding-agents-rollout/assets/card-02-social-adoption-map.spec.md
+    insertion_after_heading: 2. 初次采用主要靠社会扩散：peer 和 manager 的可见使用是强信号
+    purpose: Visualize social exposure signals: reviewer peers +54%, skip-level peers +216%, manager +82% for initial use.
+  - id: card-03-dose-response
+    title: 使用强度决定产出曲线
+    spec_file: publish/2026-07-04-microsoft-cli-coding-agents-rollout/assets/card-03-dose-response.spec.md
+    insertion_after_heading: 5. Outcome study 显示 merged PR lift 持续存在，但要谨慎解读
+    purpose: Show weekly tool-use days mapped to merged PR lift, plus overall 24% lift and tool comparison caveat.
+  - id: card-04-measurement-playbook
+    title: 从 PR throughput 到质量控制
+    spec_file: publish/2026-07-04-microsoft-cli-coding-agents-rollout/assets/card-04-measurement-playbook.spec.md
+    insertion_after_heading: 给我们的启示
+    purpose: Turn the article into an internal rollout measurement playbook: activation, retention, output, quality, governance.
+style:
+  canonical_style_file: docs/AI_NATIVE_RESEARCH_VISUAL_STYLE_V1.md
+  preferred_style: clean_dense_informational_card
+  notes:
+    - Normal Feishu-friendly aspect ratio; use 16:9 or 4:3 depending on existing runbook standard.
+    - Avoid vendor marketing look; emphasize research evidence and engineering management implications.
+    - Use concise Chinese labels and source attribution footer.
