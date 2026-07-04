@@ -1,0 +1,77 @@
+id: 2026-07-04-microsoft-cli-coding-agents-rollout
+slug: microsoft-cli-coding-agents-rollout
+date: 2026-07-04
+producer: chatgpt
+next_actor: codex
+status: pending
+language: zh-CN
+content_type: tier0_special_analysis
+series: AI Native Engineering Daily
+tier: 0
+priority: high
+replace_previous_topic: false
+avoid_repetition_notes:
+  - 2026-06-30 package covered open-source AI coding agent attribution and census.
+  - 2026-07-01 package covered OpenAI Codex usage and organizational adoption.
+  - 2026-07-02 package covered Google DeepMind AI Control Roadmap and agent security control plane.
+  - 2026-07-03 package covered AWS Forward Deployed Engineering for enterprise agentic AI production.
+  - This package shifts to Microsoft internal rollout telemetry, social adoption, retention, dose-response, and throughput measurement for CLI coding agents.
+source:
+  title: Adoption and Impact of Command-Line AI Coding Agents: A Study of Microsoft’s Early 2026 Rollout of Claude Code and GitHub Copilot CLI
+  organization: Microsoft
+  source_type: arxiv_field_study_primary_source
+  url: https://arxiv.org/abs/2607.01418
+  pdf_url: https://arxiv.org/pdf/2607.01418
+  publication_date: 2026-07-01
+  authors:
+    - Emerson Murphy-Hill
+    - Jenna Butler
+    - Alexandra Savelieva
+secondary_sources:
+  - title: AI Writes Faster Than Humans Can Review: A Longitudinal Study of an Enterprise 2x Mandate
+    source: arXiv
+    url: https://arxiv.org/abs/2607.01904
+    publication_date: 2026-07-02
+  - title: GitHub adds Claude and Codex AI coding agents
+    source: The Verge
+    url: https://www.theverge.com/news/873665/github-claude-codex-ai-agents
+    publication_date: 2026-02-04
+  - title: Detecting AI Coding Agents in Open Source
+    source: arXiv
+    url: https://arxiv.org/abs/2606.24429
+    publication_date: 2026-06-23
+article:
+  target_feishu_title: AI Coding Agent 落地不是发 License，而是让使用被看见：Microsoft CLI Rollout 的数据
+  target_audience:
+    - engineering_leaders
+    - ai_native_engineering
+    - developer_productivity
+    - engineering_effectiveness
+    - platform_engineering
+  tags:
+    - AI Native Engineering
+    - AI Coding
+    - Agentic Engineering
+    - Microsoft
+    - GitHub Copilot CLI
+    - Claude Code
+    - Developer Productivity
+    - Engineering Effectiveness
+    - Tier 0
+  summary: Microsoft 的一手 field study 显示，CLI coding agents 的采用主要经由 peer 和 manager 的可见使用扩散，留存更依赖真实 PR 活动，adopters 在四个月窗口内约多合并 24% PR；但 merged PR 只是 throughput proxy，质量与价值衡量仍是下一阶段重点。
+visuals:
+  source_images_allowed: true
+  generate_visual_cards: true
+  canonical_style_file: docs/AI_NATIVE_RESEARCH_VISUAL_STYLE_V1.md
+  runbook_file: docs/CODEX_FEISHU_PUBLISHING_RUNBOOK.md
+files:
+  article: publish/2026-07-04-microsoft-cli-coding-agents-rollout/source.md
+  handoff: publish/2026-07-04-microsoft-cli-coding-agents-rollout/codex-handoff.yaml
+  status: publish/2026-07-04-microsoft-cli-coding-agents-rollout/publish-status.yaml
+  source_images: publish/2026-07-04-microsoft-cli-coding-agents-rollout/assets/source-images.yaml
+  visual_manifest: publish/2026-07-04-microsoft-cli-coding-agents-rollout/assets/visual-card-manifest.yaml
+  card_specs:
+    - publish/2026-07-04-microsoft-cli-coding-agents-rollout/assets/card-01-rollout-funnel.spec.md
+    - publish/2026-07-04-microsoft-cli-coding-agents-rollout/assets/card-02-social-adoption-map.spec.md
+    - publish/2026-07-04-microsoft-cli-coding-agents-rollout/assets/card-03-dose-response.spec.md
+    - publish/2026-07-04-microsoft-cli-coding-agents-rollout/assets/card-04-measurement-playbook.spec.md
