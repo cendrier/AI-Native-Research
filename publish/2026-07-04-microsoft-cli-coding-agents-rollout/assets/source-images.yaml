@@ -1,0 +1,29 @@
+source_images:
+  - id: source-fig-01-social-exposure
+    source: arXiv PDF Figure 1
+    url: https://arxiv.org/pdf/2607.01418
+    page: 7
+    description: Change in odds of initial use and retention of Copilot CLI by social exposure.
+    insertion_candidate: after section 2 on social diffusion
+    usage: optional_source_proof
+    extraction_notes: Crop figure only if labels are readable in Feishu. Add caption with arXiv title and publication date.
+  - id: source-fig-07-dose-response
+    source: arXiv PDF Figure 7
+    url: https://arxiv.org/pdf/2607.01418
+    page: 14
+    description: Percent change in merged PRs per engineer-week by days of tool use that week.
+    insertion_candidate: after section 5 on outcome study
+    usage: optional_source_proof
+    extraction_notes: Prefer this figure if only one source figure is used; it directly supports the dose-response story.
+  - id: source-fig-08-tool-comparison
+    source: arXiv PDF Figure 8
+    url: https://arxiv.org/pdf/2607.01418
+    page: 15
+    description: Percent change in merged PRs per engineer-week for Claude Code and Copilot CLI.
+    insertion_candidate: near tool comparison paragraph in section 5
+    usage: optional_source_proof
+    extraction_notes: Use only if it does not make the Feishu document visually crowded.
+notes:
+  - Generated cards are the default visuals; source screenshots are optional proof elements.
+  - Skip any screenshot that is blurry, cramped, or duplicates the generated cards.
+  - Preserve source attribution and link to https://arxiv.org/abs/2607.01418 in all captions.
