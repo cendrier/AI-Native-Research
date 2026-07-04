@@ -1,0 +1,70 @@
+handoff_id: 2026-07-04-microsoft-cli-coding-agents-rollout
+target_feishu_title: AI Coding Agent 落地不是发 License，而是让使用被看见：Microsoft CLI Rollout 的数据
+target_space: internal_feishu_ai_native_engineering
+priority: high
+status: ready_for_codex
+
+source_files:
+  article_markdown: publish/2026-07-04-microsoft-cli-coding-agents-rollout/source.md
+  metadata: publish/2026-07-04-microsoft-cli-coding-agents-rollout/metadata.yaml
+  status: publish/2026-07-04-microsoft-cli-coding-agents-rollout/publish-status.yaml
+  source_images: publish/2026-07-04-microsoft-cli-coding-agents-rollout/assets/source-images.yaml
+  visual_manifest: publish/2026-07-04-microsoft-cli-coding-agents-rollout/assets/visual-card-manifest.yaml
+  card_specs:
+    - publish/2026-07-04-microsoft-cli-coding-agents-rollout/assets/card-01-rollout-funnel.spec.md
+    - publish/2026-07-04-microsoft-cli-coding-agents-rollout/assets/card-02-social-adoption-map.spec.md
+    - publish/2026-07-04-microsoft-cli-coding-agents-rollout/assets/card-03-dose-response.spec.md
+    - publish/2026-07-04-microsoft-cli-coding-agents-rollout/assets/card-04-measurement-playbook.spec.md
+
+recommended_document_structure:
+  - Title
+  - ⭐ Tier 0 Special Attention
+  - 原文信息
+  - 核心洞察
+  - 重点内容
+  - 给我们的启示
+  - 延伸阅读
+
+visual_cards:
+  - id: card-01-rollout-funnel
+    title: Rollout 三段漏斗：adoption / retention / outcome
+    spec_file: publish/2026-07-04-microsoft-cli-coding-agents-rollout/assets/card-01-rollout-funnel.spec.md
+    insert_after: 核心洞察
+  - id: card-02-social-adoption-map
+    title: Agent 采用是社会扩散
+    spec_file: publish/2026-07-04-microsoft-cli-coding-agents-rollout/assets/card-02-social-adoption-map.spec.md
+    insert_after: 2. 初次采用主要靠社会扩散：peer 和 manager 的可见使用是强信号
+  - id: card-03-dose-response
+    title: 使用强度决定产出曲线
+    spec_file: publish/2026-07-04-microsoft-cli-coding-agents-rollout/assets/card-03-dose-response.spec.md
+    insert_after: 5. Outcome study 显示 merged PR lift 持续存在，但要谨慎解读
+  - id: card-04-measurement-playbook
+    title: 从 PR throughput 到质量控制
+    spec_file: publish/2026-07-04-microsoft-cli-coding-agents-rollout/assets/card-04-measurement-playbook.spec.md
+    insert_after: 给我们的启示
+
+source_image_plan:
+  - Extract or screenshot arXiv PDF Figure 1, social exposure odds, if the visual is readable and attribution can be preserved.
+  - Extract or screenshot arXiv PDF Figure 7, dose-response merged PR lift by tool-use days, if readable.
+  - Extract Figure 8 only if there is room for a small proof graphic comparing Claude Code and Copilot CLI; otherwise use the generated card 03.
+  - Always include source attribution captions and links back to https://arxiv.org/abs/2607.01418.
+  - If screenshots are blurry or the PDF figure labels are too dense for Feishu, skip source screenshots and rely on generated visual cards.
+
+codex_instructions:
+  - Read source.md and preserve the reader-facing structure exactly.
+  - Keep normal paragraph spacing; avoid excessive one-line breaks.
+  - Generate four visual cards from the specs using the canonical visual style file docs/AI_NATIVE_RESEARCH_VISUAL_STYLE_V1.md.
+  - Place each card at the exact insertion location specified above; do not cluster cards at the end.
+  - Upload the final document to the internal Feishu AI Native Engineering space.
+  - Use the target Feishu title exactly.
+  - Verify source links and publication dates in the final Feishu document.
+  - After publishing, update publish-status.yaml with status: published, feishu_url, published_at, cards_generated, source_images_used, and any deviations.
+  - If a source image cannot be extracted cleanly, skip it rather than using a blurry screenshot; generated cards are sufficient.
+
+metadata_yaml:
+  id: 2026-07-04-microsoft-cli-coding-agents-rollout
+  tier: 0
+  source_org: Microsoft
+  topic: Microsoft early-2026 CLI coding agents rollout telemetry
+  publication_date: 2026-07-01
+  feishu_title: AI Coding Agent 落地不是发 License，而是让使用被看见：Microsoft CLI Rollout 的数据
