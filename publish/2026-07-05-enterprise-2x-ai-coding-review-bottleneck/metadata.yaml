@@ -1,0 +1,45 @@
+id: 2026-07-05-enterprise-2x-ai-coding-review-bottleneck
+date: 2026-07-05
+status: pending
+language: zh-CN
+source_title: "AI Writes Faster Than Humans Can Review: A Longitudinal Study of an Enterprise 2x Mandate"
+source: arXiv
+source_url: https://arxiv.org/abs/2607.01904
+publication_date: 2026-07-02
+source_type: research_paper
+tier: non_tier0
+tier0_scan_result: no_new_non_repeated_tier0_source_found
+tier0_scan_notes: >-
+  Scanned recent primary sources and flagship reports from OpenAI, Microsoft, Anthropic, Google, GitHub,
+  Atlassian, Stripe, Shopify, Cloudflare, Vercel, Linear, Datadog, NVIDIA, Meta, Amazon, Stanford AI Index,
+  State of DevOps, Accelerate, and adjacent frontier AI / engineering organizations. No newly published,
+  non-repeated, directly relevant Tier-0 flagship source was stronger than this recent enterprise longitudinal
+  AI coding study, so the reader-facing article intentionally omits the Tier 0 Special Attention section.
+selected_reason: >-
+  Recent, freely accessible, metric-heavy longitudinal study of an enterprise AI coding 2x mandate. It adds a
+  new angle after previous pieces on OpenAI/Codex, Google DeepMind AI Control, AWS FDE, and Microsoft CLI rollout:
+  how AI coding throughput creates a downstream review and validation bottleneck.
+source_org: academic_research_enterprise_case_study
+topic: enterprise AI coding productivity mandate and review bottleneck
+keywords:
+  - AI coding
+  - developer productivity
+  - engineering effectiveness
+  - code review
+  - AI-assisted software development
+  - enterprise rollout
+  - AI Native Engineering
+avoid_repetition:
+  previous_topics:
+    - OpenAI Codex agentic AI adoption
+    - Google DeepMind AI Control Roadmap
+    - AWS Forward Deployed Engineering
+    - Microsoft CLI coding agents rollout telemetry
+  today_angle: enterprise 2x mandate, accumulated AI tool use, review capacity, automated review, quality governance
+reader_title: "AI 写得比人审得快：2× 工程效率 Mandate 背后的 Review 瓶颈"
+feishu_title: "AI 写得比人审得快：2× 工程效率 Mandate 背后的 Review 瓶颈"
+files:
+  source: publish/2026-07-05-enterprise-2x-ai-coding-review-bottleneck/source.md
+  codex_handoff: publish/2026-07-05-enterprise-2x-ai-coding-review-bottleneck/codex-handoff.yaml
+  status: publish/2026-07-05-enterprise-2x-ai-coding-review-bottleneck/publish-status.yaml
+  visual_manifest: publish/2026-07-05-enterprise-2x-ai-coding-review-bottleneck/assets/visual-card-manifest.yaml
