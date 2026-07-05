@@ -1,0 +1,25 @@
+source_images:
+  - id: source-figure-01-tool-adoption
+    source: arXiv PDF
+    source_url: https://arxiv.org/abs/2607.01904
+    target_section: 重点内容 / 1. 这不是工具评测，而是一次企业级 2× Mandate 的纵向观察
+    extraction_instruction: Screenshot Figure 1 only if axis labels and captions remain readable in Feishu.
+    caption: "Source: AI Writes Faster Than Humans Can Review, arXiv, 2026-07-02."
+    required: false
+  - id: source-figure-02-throughput
+    source: arXiv PDF
+    source_url: https://arxiv.org/abs/2607.01904
+    target_section: 重点内容 / 3. 2× 不是一夜发生
+    extraction_instruction: Screenshot the PR throughput / AI-authored PR figure if it clearly supports the 2.09× narrative.
+    caption: "Source: AI Writes Faster Than Humans Can Review, arXiv, 2026-07-02."
+    required: false
+  - id: source-figure-03-review-shift
+    source: arXiv PDF
+    source_url: https://arxiv.org/abs/2607.01904
+    target_section: 重点内容 / 5. 真正的代价在 review
+    extraction_instruction: Screenshot review composition figures showing human review decline and automated review growth if readable.
+    caption: "Source: AI Writes Faster Than Humans Can Review, arXiv, 2026-07-02."
+    required: false
+notes:
+  - Generated cards are preferred when source figures are too dense for Feishu mobile reading.
+  - Preserve attribution and link back to the arXiv abstract page for all source screenshots.
