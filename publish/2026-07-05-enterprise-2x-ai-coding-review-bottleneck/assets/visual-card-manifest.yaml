@@ -1,0 +1,29 @@
+manifest_id: 2026-07-05-enterprise-2x-ai-coding-review-bottleneck-visuals
+style_reference: docs/AI_NATIVE_RESEARCH_VISUAL_STYLE_V1.md
+output_directory: publish/2026-07-05-enterprise-2x-ai-coding-review-bottleneck/assets/generated
+cards:
+  - id: card-01-2x-mandate-map
+    title: 2× Mandate 不是开关，而是组织飞轮
+    spec_file: publish/2026-07-05-enterprise-2x-ai-coding-review-bottleneck/assets/card-01-2x-mandate-map.spec.md
+    output_file: publish/2026-07-05-enterprise-2x-ai-coding-review-bottleneck/assets/generated/card-01-2x-mandate-map.png
+    insert_after: 核心洞察
+  - id: card-02-productivity-curve
+    title: 从 1.5× 到 2×：积累使用释放收益
+    spec_file: publish/2026-07-05-enterprise-2x-ai-coding-review-bottleneck/assets/card-02-productivity-curve.spec.md
+    output_file: publish/2026-07-05-enterprise-2x-ai-coding-review-bottleneck/assets/generated/card-02-productivity-curve.png
+    insert_after: 3. 2× 不是一夜发生：Mandate 是催化剂，积累使用才是机制
+  - id: card-03-review-bottleneck
+    title: AI 写得更快，瓶颈下移到 Review
+    spec_file: publish/2026-07-05-enterprise-2x-ai-coding-review-bottleneck/assets/card-03-review-bottleneck.spec.md
+    output_file: publish/2026-07-05-enterprise-2x-ai-coding-review-bottleneck/assets/generated/card-03-review-bottleneck.png
+    insert_after: 5. 真正的代价在 review：人审不够，自动化审查接管
+  - id: card-04-ai-native-metrics
+    title: AI Native Engineering 指标栈
+    spec_file: publish/2026-07-05-enterprise-2x-ai-coding-review-bottleneck/assets/card-04-ai-native-metrics.spec.md
+    output_file: publish/2026-07-05-enterprise-2x-ai-coding-review-bottleneck/assets/generated/card-04-ai-native-metrics.png
+    insert_after: 给我们的启示
+requirements:
+  - Use 16:9 or Feishu-friendly 4:3 ratio, whichever is canonical in the visual style file.
+  - Keep text readable on mobile.
+  - Use concise labels; do not over-pack source data.
+  - Include small footer attribution: arXiv, 2026-07-02.
