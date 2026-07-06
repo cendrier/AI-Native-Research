@@ -1,0 +1,24 @@
+source_images:
+  - id: source-techradar-headline
+    source_url: "https://www.techradar.com/pro/speed-without-control-is-a-liability-not-an-advantage-gitlab-study-reveals-ai-code-generation-is-outpacing-controls"
+    target_path: "publish/2026-07-06-ai-code-governance-traceability/assets/source-techradar-headline.png"
+    capture_area: "headline, source label, author, publication date"
+    insert_location: "optional, after 原文信息 if the Feishu version benefits from a proof screenshot"
+    purpose: "prove source identity and publication date"
+  - id: source-techradar-key-metrics
+    source_url: "https://www.techradar.com/pro/speed-without-control-is-a-liability-not-an-advantage-gitlab-study-reveals-ai-code-generation-is-outpacing-controls"
+    target_path: "publish/2026-07-06-ai-code-governance-traceability/assets/source-techradar-key-metrics.png"
+    capture_area: "article section containing 91%, 79%, 78%, 73%, 85%, 43%, 73%, 34%, 92%, 91%, 98% metrics if visible"
+    insert_location: "optional, near 重点内容 subsection 2 or 3"
+    purpose: "evidence screenshot for key metrics"
+  - id: source-techradar-trust-not-speed
+    source_url: "https://www.techradar.com/pro/never-let-the-builder-be-its-own-reviewer-the-next-challenge-is-trust-not-speed-of-code-generation"
+    target_path: "publish/2026-07-06-ai-code-governance-traceability/assets/source-techradar-trust-not-speed.png"
+    capture_area: "headline and the section discussing independent verification / builder vs reviewer"
+    insert_location: "optional, near 重点内容 subsection 5"
+    purpose: "support the independent verification framing"
+
+rules:
+  - "Use screenshots as proof images only; do not reproduce long article passages."
+  - "Do not use stock images from the article as primary visuals."
+  - "Prefer custom visual cards for concepts and use source screenshots only when they add credibility."
