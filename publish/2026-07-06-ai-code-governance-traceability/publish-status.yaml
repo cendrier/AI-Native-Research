@@ -1,0 +1,31 @@
+status: pending
+created_at: 2026-07-06
+updated_at: 2026-07-06
+feishu_url: null
+published_at: null
+
+workflow:
+  research_completed: true
+  tier0_scan_completed: true
+  tier0_reader_section_included: false
+  article_drafted: true
+  codex_handoff_created: true
+  visual_cards_generated: false
+  source_screenshots_captured: false
+  feishu_uploaded: false
+  status_backfilled: false
+
+notes:
+  - "No directly accessible, non-repeated official Tier-0 primary report was found in this run."
+  - "Selected regular daily source: TechRadar Pro coverage of GitLab study / AI Accountability Report."
+  - "The article intentionally focuses on provenance, traceability, accountability, and independent verification rather than repeating yesterday's PR throughput/review bottleneck topic."
+
+required_next_steps:
+  - "Generate four visual cards according to assets/card-*.spec.md."
+  - "Capture source evidence screenshots described in assets/source-images.yaml."
+  - "Assemble Feishu article with images inserted at specified locations."
+  - "Upload to internal Feishu space."
+  - "Backfill feishu_url, published_at, generated_asset_paths, and any manual edits."
+
+generated_asset_paths: []
+manual_edits: []
