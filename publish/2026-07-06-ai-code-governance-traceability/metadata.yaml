@@ -1,0 +1,68 @@
+date: 2026-07-06
+slug: ai-code-governance-traceability
+title: "AI 代码不是写得更快就完了：GitLab 数据里的治理缺口"
+status: pending
+language: zh-CN
+content_type: daily_internal_article
+series: AI Native Engineering / AI Coding Daily Publish
+
+primary_source:
+  title: "‘Speed without control is a liability, not an advantage’: GitLab study reveals AI code generation is outpacing controls"
+  source: TechRadar Pro
+  url: "https://www.techradar.com/pro/speed-without-control-is-a-liability-not-an-advantage-gitlab-study-reveals-ai-code-generation-is-outpacing-controls"
+  publication_date: 2026-06-30
+  accessibility: freely_accessible
+
+supporting_sources:
+  - title: "Enterprises are shipping so much AI-generated code they can't control or secure it"
+    source: ITPro
+    url: "https://www.itpro.com/software/development/enterprises-are-shipping-so-much-ai-generated-code-they-cant-control-or-secure-it"
+    publication_date: 2026-06-24
+  - title: "‘Never let the builder be its own reviewer’: The next challenge is trust, not speed of code generation"
+    source: TechRadar Pro
+    url: "https://www.techradar.com/pro/never-let-the-builder-be-its-own-reviewer-the-next-challenge-is-trust-not-speed-of-code-generation"
+    publication_date: 2026-06-26
+  - title: "AI Writes Faster Than Humans Can Review: A Longitudinal Study of an Enterprise 2x Mandate"
+    source: arXiv
+    url: "https://arxiv.org/abs/2607.01904"
+    publication_date: 2026-07-02
+
+tier0_scan:
+  result: no_dedicated_reader_section
+  reader_section_included: false
+  rationale: >-
+    Scanned for new, directly accessible, non-repeated Tier-0 primary sources from OpenAI, Microsoft, Anthropic, Google, GitHub, Atlassian, Stripe, Shopify,
+    Cloudflare, Vercel, Linear, Datadog, NVIDIA, Meta, Amazon, Stanford AI Index, State of DevOps, Accelerate/DORA, and adjacent frontier engineering organizations.
+    The strongest fresh signal was public reporting on GitLab's AI Accountability Report, but the official report page was not directly accessible in this run,
+    so the article treats it as a regular daily source rather than a Tier-0 special专题.
+  scan_window_days: 14
+
+non_repetition:
+  previous_topics:
+    - 2026-06-30: open-source AI coding agent detection / attribution census
+    - 2026-07-01: OpenAI Codex evidence for agentic AI adoption
+    - 2026-07-02: Google DeepMind AI Control Roadmap
+    - 2026-07-03: AWS Forward Deployed Engineering for production agentic AI
+    - 2026-07-04: Microsoft CLI coding agents rollout and social adoption
+    - 2026-07-05: enterprise 2x mandate and review bottleneck
+  today_angle: >-
+    Focuses on AI-generated code governance, provenance, incident traceability, and independent verification. It intentionally avoids making another article
+    about PR throughput or review load alone.
+
+tags:
+  - AI Native Engineering
+  - AI coding governance
+  - AI-generated code
+  - developer productivity
+  - software delivery
+  - provenance
+  - traceability
+  - independent verification
+  - engineering effectiveness
+
+summary: >-
+  Public reporting on GitLab's AI Accountability Report suggests AI coding has moved beyond a generation-speed problem. Organizations now need provenance,
+  traceability, accountable review, and verification architecture to make AI-generated code safe to ship and maintain.
+
+codex_next_action: >-
+  Generate four visual cards, capture source screenshots, assemble Feishu article under the target title, upload to the internal Feishu space, and update publish-status.yaml.
