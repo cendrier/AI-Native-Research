@@ -1,0 +1,74 @@
+target:
+  feishu_title: "AI 代码不是写得更快就完了：GitLab 数据里的治理缺口"
+  target_space: internal_ai_native_engineering
+  content_language: zh-CN
+  publish_type: daily_internal_article
+  source_markdown: "publish/2026-07-06-ai-code-governance-traceability/source.md"
+  metadata_file: "publish/2026-07-06-ai-code-governance-traceability/metadata.yaml"
+  status_file: "publish/2026-07-06-ai-code-governance-traceability/publish-status.yaml"
+
+recommended_document_structure:
+  - heading: "Title"
+    source: "source.md H1"
+  - heading: "原文信息"
+    source: "source.md ## 原文信息"
+  - heading: "核心洞察"
+    source: "source.md ## 核心洞察"
+    insert_after: "核心洞察 section first paragraph"
+    visual_card: "assets/card-01-governance-gap.spec.md"
+  - heading: "重点内容"
+    source: "source.md ## 重点内容"
+    subsection_card_map:
+      "1. 组织已经进入多 AI coding tool 并行阶段": "assets/card-01-governance-gap.spec.md"
+      "4. Provenance 盲区会变成 incident 盲区": "assets/card-02-provenance-blind-spot.spec.md"
+      "5. 预算已经转向 governance，但钱应该花在平台能力上": "assets/card-03-independent-verification.spec.md"
+  - heading: "给我们的启示"
+    source: "source.md ## 给我们的启示"
+    insert_after: "给我们的启示 section"
+    visual_card: "assets/card-04-ai-code-trust-metrics.spec.md"
+  - heading: "延伸阅读"
+    source: "source.md ## 延伸阅读"
+
+visual_cards:
+  style: "clean, information-dense, light background, rounded cards, minimal iconography, Chinese labels, no excessive decoration"
+  manifest: "publish/2026-07-06-ai-code-governance-traceability/assets/visual-card-manifest.yaml"
+  cards:
+    - file: "publish/2026-07-06-ai-code-governance-traceability/assets/card-01-governance-gap.spec.md"
+      output_path: "publish/2026-07-06-ai-code-governance-traceability/assets/card-01-governance-gap.png"
+      insert_location: "after the first paragraph of 核心洞察"
+    - file: "publish/2026-07-06-ai-code-governance-traceability/assets/card-02-provenance-blind-spot.spec.md"
+      output_path: "publish/2026-07-06-ai-code-governance-traceability/assets/card-02-provenance-blind-spot.png"
+      insert_location: "after subsection 4 in 重点内容"
+    - file: "publish/2026-07-06-ai-code-governance-traceability/assets/card-03-independent-verification.spec.md"
+      output_path: "publish/2026-07-06-ai-code-governance-traceability/assets/card-03-independent-verification.png"
+      insert_location: "after subsection 5 in 重点内容"
+    - file: "publish/2026-07-06-ai-code-governance-traceability/assets/card-04-ai-code-trust-metrics.spec.md"
+      output_path: "publish/2026-07-06-ai-code-governance-traceability/assets/card-04-ai-code-trust-metrics.png"
+      insert_location: "after 给我们的启示"
+
+source_images:
+  plan_file: "publish/2026-07-06-ai-code-governance-traceability/assets/source-images.yaml"
+  instructions:
+    - "Capture the TechRadar headline and byline/date as a source-proof screenshot."
+    - "Capture the section or bullets mentioning 91%, 79%, 78%, 73%, and 85% if visible."
+    - "Capture or recreate only small evidence snippets; do not reproduce the source article in full."
+
+codex_execution_instructions:
+  - "Read source.md and keep the reader-facing structure exactly as requested: 原文信息、核心洞察、重点内容、给我们的启示、延伸阅读."
+  - "Do not add Editor's Note, 为什么值得读, Case, or Pattern sections to the reader-facing Feishu document."
+  - "Generate the four visual cards from the specs and insert each card at its explicit insertion location. Do not place all images at the end."
+  - "Use normal paragraph spacing; avoid excessive line breaks."
+  - "Use source screenshots sparingly as proof images. Prefer custom visual cards for explanation."
+  - "After publishing to Feishu, update publish-status.yaml with feishu_url, published_at, generated_asset_paths, and any manual edits."
+  - "If upload fails, leave status as blocked and include the exact failure reason."
+
+file_paths_to_create_or_update:
+  generated_assets:
+    - "publish/2026-07-06-ai-code-governance-traceability/assets/card-01-governance-gap.png"
+    - "publish/2026-07-06-ai-code-governance-traceability/assets/card-02-provenance-blind-spot.png"
+    - "publish/2026-07-06-ai-code-governance-traceability/assets/card-03-independent-verification.png"
+    - "publish/2026-07-06-ai-code-governance-traceability/assets/card-04-ai-code-trust-metrics.png"
+    - "publish/2026-07-06-ai-code-governance-traceability/assets/source-techradar-headline.png"
+    - "publish/2026-07-06-ai-code-governance-traceability/assets/source-techradar-key-metrics.png"
+  update_after_publish:
+    - "publish/2026-07-06-ai-code-governance-traceability/publish-status.yaml"
