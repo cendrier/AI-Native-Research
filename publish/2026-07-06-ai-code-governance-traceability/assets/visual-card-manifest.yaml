@@ -1,0 +1,34 @@
+visual_card_manifest:
+  theme: "AI code governance / provenance / verification"
+  style:
+    language: zh-CN
+    aspect_ratio: "16:9"
+    background: "light, clean, subtle grid or soft gradient"
+    typography: "bold title, concise labels, readable at Feishu article width"
+    color_guidance: "use restrained palette; emphasize risk/gap/verification with contrast"
+    density: "information-rich but not cluttered"
+  cards:
+    - id: card-01-governance-gap
+      title: "从写得快到管得住"
+      spec_file: "assets/card-01-governance-gap.spec.md"
+      output_path: "assets/card-01-governance-gap.png"
+      insert_location: "after 核心洞察 first paragraph"
+      role: "opening summary card"
+    - id: card-02-provenance-blind-spot
+      title: "Provenance 盲区会变成 Incident 盲区"
+      spec_file: "assets/card-02-provenance-blind-spot.spec.md"
+      output_path: "assets/card-02-provenance-blind-spot.png"
+      insert_location: "after 重点内容 subsection 4"
+      role: "risk explanation card"
+    - id: card-03-independent-verification
+      title: "不要让 Builder 审自己"
+      spec_file: "assets/card-03-independent-verification.spec.md"
+      output_path: "assets/card-03-independent-verification.png"
+      insert_location: "after 重点内容 subsection 5"
+      role: "architecture card"
+    - id: card-04-ai-code-trust-metrics
+      title: "AI Code Trust Metrics"
+      spec_file: "assets/card-04-ai-code-trust-metrics.spec.md"
+      output_path: "assets/card-04-ai-code-trust-metrics.png"
+      insert_location: "after 给我们的启示"
+      role: "practical metrics card"
