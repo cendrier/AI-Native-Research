@@ -1,0 +1,46 @@
+status: pending
+created_at: 2026-07-07T00:51:25Z
+updated_at: 2026-07-07T00:51:25Z
+feishu_url: null
+published_at: null
+publisher: codex
+
+package:
+  repo: cendrier/AI-Native-Research
+  root: publish/2026-07-07-ai-agent-oss-newcomer-complexity
+  source_markdown: publish/2026-07-07-ai-agent-oss-newcomer-complexity/source.md
+  metadata: publish/2026-07-07-ai-agent-oss-newcomer-complexity/metadata.yaml
+  codex_handoff: publish/2026-07-07-ai-agent-oss-newcomer-complexity/codex-handoff.yaml
+
+workflow_notes:
+  tier0_special_attention_included: false
+  tier0_reason: "No fresh, directly accessible, non-repeated Tier-0 source from target organizations was selected for a dedicated reader section."
+  selected_source: "Decoupling Code Complexity from Newcomer Participation: A Causal Study of AI Coding Agent Adoption in OSS"
+  selected_source_date: 2026-07-02
+  selected_angle: "AI coding agent adoption, OSS newcomer participation, and code complexity decoupling."
+  avoid_repeating:
+    - "2026-07-06 governance/provenance article"
+    - "2026-07-05 review bottleneck article"
+    - "2026-06-30 AI coding agent attribution census"
+
+required_codex_outputs:
+  generated_asset_paths:
+    - publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-01-oss-agent-adoption.png
+    - publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-02-complexity-vs-newcomers.png
+    - publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-03-newcomer-health-metrics.png
+    - publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-04-ai-native-community-playbook.png
+  source_screenshot_paths:
+    - publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/source-arxiv-title-abstract.png
+    - publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/source-figure-1-newcomer-trajectory.png
+    - publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/source-table-1-sample-counts.png
+
+post_publish_update_required:
+  - feishu_url
+  - published_at
+  - generated_asset_paths
+  - source_screenshot_paths
+  - manual_edits
+  - final_status
+
+manual_edits: []
+errors: []
