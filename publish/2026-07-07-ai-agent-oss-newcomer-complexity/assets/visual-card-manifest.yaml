@@ -1,0 +1,37 @@
+style:
+  name: "clean AI Native research cards"
+  language: zh-CN
+  canvas: "16:9 or Feishu-friendly wide card"
+  background: "light neutral background"
+  typography: "clear Chinese headings, compact English technical terms where useful"
+  decoration: "minimal icons, no excessive gradients, no clutter"
+  density: "information-dense but readable"
+
+cards:
+  - id: card-01-oss-agent-adoption
+    title: "如何识别 AI Agent Adoption"
+    spec: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-01-oss-agent-adoption.spec.md"
+    output: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-01-oss-agent-adoption.png"
+    insert_location: "after 重点内容 subsection 2"
+    key_message: "`.cursorrules` / `CLAUDE.md` 是可观察 adoption signal，不等于真实使用强度。"
+
+  - id: card-02-complexity-vs-newcomers
+    title: "复杂度上升 ≠ 新人被挤出"
+    spec: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-02-complexity-vs-newcomers.spec.md"
+    output: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-02-complexity-vs-newcomers.png"
+    insert_location: "after 核心洞察 first paragraph"
+    key_message: "Python cognitive complexity +11%，cyclomatic complexity +3–4%，但 newcomer pipeline 未显著下降。"
+
+  - id: card-03-newcomer-health-metrics
+    title: "AI Coding 不能只看 Velocity"
+    spec: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-03-newcomer-health-metrics.spec.md"
+    output: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-03-newcomer-health-metrics.png"
+    insert_location: "after 重点内容 subsection 7"
+    key_message: "同时看 throughput、complexity、onboarding、retention、starter-task supply。"
+
+  - id: card-04-ai-native-community-playbook
+    title: "AI Native 社区/团队落地手册"
+    spec: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-04-ai-native-community-playbook.spec.md"
+    output: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-04-ai-native-community-playbook.png"
+    insert_location: "after 给我们的启示"
+    key_message: "把 AI agent 变成新人学习和复杂度治理的放大器，而不是隐形替代者。"
