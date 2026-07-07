@@ -1,0 +1,77 @@
+target:
+  feishu_title: "AI Agent 让代码更复杂，但没有挤走开源新人：603 个仓库的因果证据"
+  target_space: internal_ai_native_engineering
+  content_language: zh-CN
+  publish_type: daily_internal_article
+  source_markdown: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/source.md"
+  metadata_file: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/metadata.yaml"
+  status_file: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/publish-status.yaml"
+
+recommended_document_structure:
+  - heading: "Title"
+    source: "source.md H1"
+  - heading: "原文信息"
+    source: "source.md ## 原文信息"
+  - heading: "核心洞察"
+    source: "source.md ## 核心洞察"
+    insert_after: "核心洞察 section first paragraph"
+    visual_card: "assets/card-02-complexity-vs-newcomers.spec.md"
+  - heading: "重点内容"
+    source: "source.md ## 重点内容"
+    subsection_card_map:
+      "2. 采用信号来自 `.cursorrules` 和 `CLAUDE.md`，这是可观察 adoption，不是使用强度": "assets/card-01-oss-agent-adoption.spec.md"
+      "6. 最关键的发现是“decoupling”：复杂度机制存在，但没有传导到新人流失": "assets/card-02-complexity-vs-newcomers.spec.md"
+      "7. 论文的边界也要写清楚": "assets/card-03-newcomer-health-metrics.spec.md"
+  - heading: "给我们的启示"
+    source: "source.md ## 给我们的启示"
+    insert_after: "给我们的启示 section"
+    visual_card: "assets/card-04-ai-native-community-playbook.spec.md"
+  - heading: "延伸阅读"
+    source: "source.md ## 延伸阅读"
+
+visual_cards:
+  style: "clean, information-dense, light background, rounded cards, minimal iconography, Chinese labels, no excessive decoration"
+  manifest: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/visual-card-manifest.yaml"
+  cards:
+    - file: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-01-oss-agent-adoption.spec.md"
+      output_path: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-01-oss-agent-adoption.png"
+      insert_location: "after subsection 2 in 重点内容"
+    - file: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-02-complexity-vs-newcomers.spec.md"
+      output_path: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-02-complexity-vs-newcomers.png"
+      insert_location: "after the first paragraph of 核心洞察; reuse or reference again after subsection 6 only if layout benefits"
+    - file: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-03-newcomer-health-metrics.spec.md"
+      output_path: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-03-newcomer-health-metrics.png"
+      insert_location: "after subsection 7 in 重点内容"
+    - file: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-04-ai-native-community-playbook.spec.md"
+      output_path: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-04-ai-native-community-playbook.png"
+      insert_location: "after 给我们的启示"
+
+source_images:
+  plan_file: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/source-images.yaml"
+  instructions:
+    - "Capture the arXiv title/date/abstract block as a source-proof screenshot."
+    - "Capture Figure 1 from the paper if feasible, because it visually shows treated/control newcomer trajectories around adoption."
+    - "Capture Table I or recreate its sample counts in a custom card; do not reproduce the paper in full."
+    - "Use source screenshots as evidence, not as the main explanatory visuals."
+
+codex_execution_instructions:
+  - "Read source.md and keep the reader-facing structure exactly as requested: 原文信息、核心洞察、重点内容、给我们的启示、延伸阅读."
+  - "Do not add Editor's Note, 为什么值得读, Case, or Pattern sections to the reader-facing Feishu document."
+  - "Do not add a ⭐ Tier 0 Special Attention section because metadata marks this run as no_dedicated_reader_section."
+  - "Generate the four visual cards from the specs and insert each card at its explicit insertion location. Do not place all images at the end."
+  - "Use normal paragraph spacing; avoid excessive line breaks."
+  - "Preserve the nuance: the paper finds modest complexity increase but no detectable newcomer crowd-out in established OSS projects. Do not frame it as universal proof that AI agents are harmless."
+  - "After publishing to Feishu, update publish-status.yaml with feishu_url, published_at, generated_asset_paths, source_screenshot_paths, and any manual edits."
+  - "If upload fails, leave status as blocked and include the exact failure reason."
+
+file_paths_to_create_or_update:
+  generated_assets:
+    - "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-01-oss-agent-adoption.png"
+    - "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-02-complexity-vs-newcomers.png"
+    - "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-03-newcomer-health-metrics.png"
+    - "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/card-04-ai-native-community-playbook.png"
+    - "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/source-arxiv-title-abstract.png"
+    - "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/source-figure-1-newcomer-trajectory.png"
+    - "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/source-table-1-sample-counts.png"
+  update_after_publish:
+    - "publish/2026-07-07-ai-agent-oss-newcomer-complexity/publish-status.yaml"
