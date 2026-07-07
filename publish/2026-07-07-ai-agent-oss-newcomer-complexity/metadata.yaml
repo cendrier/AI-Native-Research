@@ -1,0 +1,83 @@
+date: 2026-07-07
+slug: ai-agent-oss-newcomer-complexity
+title: "AI Agent 让代码更复杂，但没有挤走开源新人：603 个仓库的因果证据"
+status: pending
+language: zh-CN
+content_type: daily_internal_article
+series: AI Native Engineering / AI Coding Daily Publish
+
+primary_source:
+  title: "Decoupling Code Complexity from Newcomer Participation: A Causal Study of AI Coding Agent Adoption in OSS"
+  source: arXiv
+  url: "https://arxiv.org/abs/2607.01810"
+  publication_date: 2026-07-02
+  accessibility: freely_accessible
+  source_type: primary_research_paper
+
+supporting_sources:
+  - title: "Cheap Code, Costly Judgment: A Case Study on Governable Agentic Software Engineering"
+    source: arXiv
+    url: "https://arxiv.org/abs/2607.01087"
+    publication_date: 2026-07-01
+  - title: "AI Writes Faster Than Humans Can Review: A Longitudinal Study of an Enterprise 2x Mandate"
+    source: arXiv
+    url: "https://arxiv.org/abs/2607.01904"
+    publication_date: 2026-07-02
+  - title: "Adoption and Impact of Command-Line AI Coding Agents: A Study of Microsoft's Early 2026 Rollout of Claude Code and GitHub Copilot CLI"
+    source: arXiv
+    url: "https://arxiv.org/abs/2607.01418"
+    publication_date: 2026-07-01
+  - title: "Detecting AI Coding Agents in Open Source: A Validated Multi-Method Census of 180 Million Repositories"
+    source: arXiv
+    url: "https://arxiv.org/abs/2606.22419"
+    publication_date: 2026-06-23
+
+tier0_scan:
+  result: no_dedicated_reader_section
+  reader_section_included: false
+  rationale: >-
+    Scanned for new, directly accessible, non-repeated Tier-0 primary sources from OpenAI, Microsoft, Anthropic, Google, GitHub, Atlassian, Stripe, Shopify,
+    Cloudflare, Vercel, Linear, Datadog, NVIDIA, Meta, Amazon, Stanford AI Index, State of DevOps, Accelerate/DORA, and adjacent frontier engineering organizations.
+    No new official flagship report, annual/state-of report, system card, benchmark report, white paper, or major methodology paper from those organizations
+    was both fresh and more relevant than the selected primary research paper. The reader-facing article therefore omits the ⭐ Tier 0 Special Attention section.
+  scan_window_days: 14
+  scan_date: 2026-07-07
+
+selection_rationale: >-
+  Selected because it gives a causal, source-grounded answer to a practical AI Native Engineering question: whether visible AI coding agent adoption in OSS raises
+  code complexity and whether that complexity harms the newcomer pipeline. It is distinct from previous daily topics by focusing on newcomer participation,
+  onboarding health, and community sustainability rather than attribution, Codex adoption, agent control, enterprise deployment, social rollout, PR throughput,
+  or provenance governance.
+
+non_repetition:
+  previous_topics:
+    - 2026-06-30: open-source AI coding agent detection / attribution census
+    - 2026-07-01: OpenAI Codex evidence for agentic AI adoption
+    - 2026-07-02: Google DeepMind AI Control Roadmap
+    - 2026-07-03: AWS Forward Deployed Engineering for production agentic AI
+    - 2026-07-04: Microsoft CLI coding agents rollout and social adoption
+    - 2026-07-05: enterprise 2x mandate and review bottleneck
+    - 2026-07-06: AI-generated code governance, provenance, and traceability
+  today_angle: >-
+    Focuses on AI coding agents' effect on OSS newcomer participation and code complexity. It deliberately avoids repeating yesterday's governance/provenance angle
+    and treats human participation as an engineering health metric.
+
+tags:
+  - AI Native Engineering
+  - AI coding agents
+  - open source
+  - developer onboarding
+  - newcomer participation
+  - code complexity
+  - engineering effectiveness
+  - developer productivity
+  - causal inference
+  - community sustainability
+
+summary: >-
+  A July 2, 2026 arXiv paper identifies 1,888 OSS projects with visible Cursor or Claude Code adoption and runs a main difference-in-differences analysis on
+  603 established adopters with pre-adoption history. It finds agent adoption modestly increases code complexity but does not measurably reduce newcomer inflow,
+  onboarding, retention, or beginner-task supply. The practical takeaway is to manage AI coding adoption with both velocity metrics and human participation metrics.
+
+codex_next_action: >-
+  Generate four visual cards, capture source screenshots, assemble the Feishu article under the target title, upload it to the internal Feishu space, and update publish-status.yaml.
