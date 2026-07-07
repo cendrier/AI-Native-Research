@@ -1,0 +1,29 @@
+source_images:
+  - id: source-arxiv-title-abstract
+    type: screenshot
+    source_url: "https://arxiv.org/abs/2607.01810"
+    capture_target: "arXiv title, authors, submitted date, and abstract block"
+    output_path: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/source-arxiv-title-abstract.png"
+    insert_location: "optional proof image near 原文信息; keep small"
+    purpose: "Verify title, source, publication date, and core abstract metrics."
+
+  - id: source-figure-1-newcomer-trajectory
+    type: screenshot
+    source_url: "https://arxiv.org/html/2607.01810"
+    capture_target: "Figure 1: descriptive newcomer trajectory in event time"
+    output_path: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/source-figure-1-newcomer-trajectory.png"
+    insert_location: "optional proof image after 重点内容 subsection 4"
+    purpose: "Show the treated/control event-time trajectory underlying the no-crowd-out finding."
+
+  - id: source-table-1-sample-counts
+    type: screenshot_or_recreated_evidence_card
+    source_url: "https://arxiv.org/html/2607.01810"
+    capture_target: "Table I: harvested adopters, identified sample, complexity analysis samples"
+    output_path: "publish/2026-07-07-ai-agent-oss-newcomer-complexity/assets/source-table-1-sample-counts.png"
+    insert_location: "optional proof image after 重点内容 subsection 3"
+    purpose: "Verify the 1,888 harvested adopters, 603 identified adopters, 1,784 controls, and complexity sample sizes."
+
+notes:
+  - "Do not reproduce the full paper or long tables. Use only compact proof screenshots."
+  - "Prefer custom visual cards for explanation; source screenshots are for verification."
+  - "Crop out unrelated browser chrome where possible."
