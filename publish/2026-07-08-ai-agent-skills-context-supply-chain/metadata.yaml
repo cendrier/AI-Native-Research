@@ -1,0 +1,91 @@
+date: 2026-07-08
+slug: ai-agent-skills-context-supply-chain
+title: "AI Agent 的新依赖不是库，而是 SKILL.md：从 4.1 万个 Skills 看上下文供应链"
+status: pending
+language: zh-CN
+content_type: daily_internal_article
+series: AI Native Engineering / AI Coding Daily Publish
+
+primary_source:
+  title: "From Registry to Repository: How AI Agent Skills Are Written, Adapted, and Maintained"
+  source: arXiv
+  url: "https://arxiv.org/abs/2607.00911"
+  pdf_url: "https://arxiv.org/pdf/2607.00911"
+  publication_date: 2026-07-01
+  revised_date: 2026-07-06
+  accessibility: freely_accessible
+  source_type: primary_research_paper
+
+supporting_sources:
+  - title: "Specification - Agent Skills"
+    source: agentskills.io
+    url: "https://agentskills.io/specification"
+    source_type: open_specification
+  - title: "The Agent Skills Directory"
+    source: skills.sh
+    url: "https://www.skills.sh/"
+    source_type: public_registry
+  - title: "Cheap Code, Costly Judgment: A Case Study on Governable Agentic Software Engineering"
+    source: arXiv
+    url: "https://arxiv.org/abs/2607.01087"
+    publication_date: 2026-07-01
+  - title: "RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources"
+    source: arXiv
+    url: "https://arxiv.org/abs/2606.29538"
+    publication_date: 2026-06-28
+  - title: "SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks"
+    source: arXiv
+    url: "https://arxiv.org/abs/2602.12670"
+    publication_date: 2026-02-13
+
+tier0_scan:
+  result: no_dedicated_reader_section
+  reader_section_included: false
+  rationale: >-
+    Scanned for new, directly accessible, non-repeated Tier-0 primary sources from OpenAI, Microsoft, Anthropic, Google, GitHub, Atlassian, Stripe, Shopify,
+    Cloudflare, Vercel, Linear, Datadog, NVIDIA, Meta, Amazon, Stanford AI Index, State of DevOps, Accelerate/DORA, and adjacent frontier engineering organizations.
+    No new official flagship report, annual/state-of report, system card, benchmark report, white paper, or major methodology paper from those organizations
+    was both fresh, directly relevant to AI Native Engineering / AI coding, and more valuable than the selected primary research paper. The reader-facing article therefore omits the ⭐ Tier 0 Special Attention section.
+  scan_window_days: 14
+  scan_date: 2026-07-08
+
+selection_rationale: >-
+  Selected because it moves the daily series to a new layer of AI-native engineering infrastructure: skills as reusable, mutable context dependencies for coding agents.
+  The paper is recent, freely accessible, empirical, and concrete: it studies 18,463 centralized skills, 23,199 personal-use skills, 5,876 GitHub repositories,
+  and 3,709 reuse links. It gives practical guidance for building an internal skills registry, ownership model, validation workflow, and drift control loop.
+
+non_repetition:
+  previous_topics:
+    - 2026-06-30: open-source AI coding agent detection / attribution census
+    - 2026-07-01: OpenAI Codex evidence for agentic AI adoption
+    - 2026-07-02: Google DeepMind AI Control Roadmap
+    - 2026-07-03: AWS Forward Deployed Engineering for production agentic AI
+    - 2026-07-04: Microsoft CLI coding agents rollout and social adoption
+    - 2026-07-05: enterprise 2x mandate and review bottleneck
+    - 2026-07-06: AI-generated code governance, provenance, and traceability
+    - 2026-07-07: OSS newcomer participation and code complexity
+  today_angle: >-
+    Focuses on AI agent skills as an internal context supply chain: how skills are authored, copied, adapted, maintained, and allowed to drift. It avoids repeating
+    yesterday's OSS newcomer/community health angle and instead turns to reusable procedural knowledge, SKILL.md quality, and agent-runtime dependency governance.
+
+tags:
+  - AI Native Engineering
+  - AI coding agents
+  - agent skills
+  - SKILL.md
+  - context engineering
+  - software supply chain
+  - developer productivity
+  - engineering effectiveness
+  - documentation infrastructure
+  - governance
+  - internal platforms
+
+summary: >-
+  A July 1, 2026 arXiv paper studies AI agent skills as engineered artifacts rather than just capabilities. It mines 18,463 centralized skills from skills.sh,
+  23,199 personal-use skills from 5,876 GitHub repositories, and 3,709 reuse links. The key finding is that skills are often copied once, rarely synchronized,
+  and locally maintained mostly through additive changes. For AI Native Engineering, this implies that internal agent skills need dependency-like governance:
+  versioning, ownership, activation tracing, validation, compatibility metadata, source-of-truth references, and drift alerts.
+
+codex_next_action: >-
+  Generate four visual cards, capture source screenshots, assemble the Feishu article under the target title, upload it to the internal Feishu space, and update publish-status.yaml.
