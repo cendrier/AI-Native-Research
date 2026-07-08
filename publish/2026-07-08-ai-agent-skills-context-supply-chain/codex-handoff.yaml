@@ -1,0 +1,80 @@
+target:
+  feishu_title: "AI Agent 的新依赖不是库，而是 SKILL.md：从 4.1 万个 Skills 看上下文供应链"
+  target_space: internal_ai_native_engineering
+  content_language: zh-CN
+  publish_type: daily_internal_article
+  source_markdown: "publish/2026-07-08-ai-agent-skills-context-supply-chain/source.md"
+  metadata_file: "publish/2026-07-08-ai-agent-skills-context-supply-chain/metadata.yaml"
+  status_file: "publish/2026-07-08-ai-agent-skills-context-supply-chain/publish-status.yaml"
+
+recommended_document_structure:
+  - heading: "Title"
+    source: "source.md H1"
+  - heading: "原文信息"
+    source: "source.md ## 原文信息"
+  - heading: "核心洞察"
+    source: "source.md ## 核心洞察"
+    insert_after: "核心洞察 section first paragraph"
+    visual_card: "assets/card-01-skill-supply-chain.spec.md"
+  - heading: "重点内容"
+    source: "source.md ## 重点内容"
+    subsection_card_map:
+      "2. 论文的研究设计：从 registry 到 repository 追踪 skill 生命周期": "assets/card-01-skill-supply-chain.spec.md"
+      "4. 一个成熟 skill 通常包含六类内容": "assets/card-02-skill-content-taxonomy.spec.md"
+      "5. 最大风险：skills 常常是一次性复制，而不是持续同步的依赖": "assets/card-03-reuse-drift-maintenance.spec.md"
+  - heading: "给我们的启示"
+    source: "source.md ## 给我们的启示"
+    insert_after: "给我们的启示 section"
+    visual_card: "assets/card-04-ai-native-skill-playbook.spec.md"
+  - heading: "延伸阅读"
+    source: "source.md ## 延伸阅读"
+
+visual_cards:
+  style: "clean, information-dense, light background, rounded cards, minimal iconography, Chinese labels, no excessive decoration"
+  manifest: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/visual-card-manifest.yaml"
+  cards:
+    - file: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/card-01-skill-supply-chain.spec.md"
+      output_path: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/card-01-skill-supply-chain.png"
+      insert_location: "after the first paragraph of 核心洞察; reuse or reference again after subsection 2 only if layout benefits"
+    - file: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/card-02-skill-content-taxonomy.spec.md"
+      output_path: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/card-02-skill-content-taxonomy.png"
+      insert_location: "after subsection 4 in 重点内容"
+    - file: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/card-03-reuse-drift-maintenance.spec.md"
+      output_path: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/card-03-reuse-drift-maintenance.png"
+      insert_location: "after subsection 5 in 重点内容"
+    - file: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/card-04-ai-native-skill-playbook.spec.md"
+      output_path: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/card-04-ai-native-skill-playbook.png"
+      insert_location: "after 给我们的启示"
+
+source_images:
+  plan_file: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/source-images.yaml"
+  instructions:
+    - "Capture the arXiv title/date/abstract block as a source-proof screenshot."
+    - "Capture Figure 1 from the paper because it visually shows registry-to-repository study design and sample counts."
+    - "Capture Figure 2 from the paper because it shows SWEBOK KA distribution of centralized vs personal-use skills."
+    - "Capture Table III if feasible because it supports the maintenance-pattern claims; crop it tightly and use only as evidence, not as the main explainer."
+    - "Use source screenshots as proof links and supporting evidence; the reader-facing explanatory visuals should be the four custom cards."
+
+codex_execution_instructions:
+  - "Read source.md and keep the reader-facing structure exactly as requested: 原文信息、核心洞察、重点内容、给我们的启示、延伸阅读."
+  - "Do not add Editor's Note, 为什么值得读, Case, or Pattern sections to the reader-facing Feishu document."
+  - "Do not add a ⭐ Tier 0 Special Attention section because metadata marks this run as no_dedicated_reader_section."
+  - "Generate the four visual cards from the specs and insert each card at its explicit insertion location. Do not place all images at the end."
+  - "Use normal paragraph spacing; avoid excessive line breaks."
+  - "Preserve the nuance: the paper studies visible public skills and a single central registry; do not frame it as a complete enterprise-skill census."
+  - "Preserve the main interpretation: AI agent reliability depends on a governed context supply chain, not only on model capability."
+  - "After publishing to Feishu, update publish-status.yaml with feishu_url, published_at, generated_asset_paths, source_screenshot_paths, and any manual edits."
+  - "If upload fails, leave status as blocked and include the exact failure reason."
+
+file_paths_to_create_or_update:
+  generated_assets:
+    - "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/card-01-skill-supply-chain.png"
+    - "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/card-02-skill-content-taxonomy.png"
+    - "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/card-03-reuse-drift-maintenance.png"
+    - "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/card-04-ai-native-skill-playbook.png"
+    - "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/source-arxiv-title-abstract.png"
+    - "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/source-figure-1-study-design.png"
+    - "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/source-figure-2-swebok-distribution.png"
+    - "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/source-table-iii-change-types.png"
+  update_after_publish:
+    - "publish/2026-07-08-ai-agent-skills-context-supply-chain/publish-status.yaml"
