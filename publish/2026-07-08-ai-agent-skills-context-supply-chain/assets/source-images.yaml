@@ -1,0 +1,31 @@
+source_images:
+  source: "From Registry to Repository: How AI Agent Skills Are Written, Adapted, and Maintained"
+  source_url: "https://arxiv.org/abs/2607.00911"
+  pdf_url: "https://arxiv.org/pdf/2607.00911"
+  usage_policy: "Use screenshots as source evidence only. Do not reproduce large portions of the paper. Prefer tight crops of title/abstract, Figure 1, Figure 2, and Table III."
+  screenshots:
+    - id: source-arxiv-title-abstract
+      output_path: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/source-arxiv-title-abstract.png"
+      capture_target: "arXiv abstract page or PDF page 1 title/abstract block"
+      purpose: "Proof of source title, authors, publication/revision date, and abstract summary."
+      insert_location: "原文信息 section, optional small proof image or link."
+    - id: source-figure-1-study-design
+      output_path: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/source-figure-1-study-design.png"
+      capture_target: "PDF Figure 1 on page 3: study design / data collection / corpus construction / skill populations / content and maintenance"
+      purpose: "Support sample counts and registry-to-repository research design."
+      insert_location: "after subsection 2 if source evidence is useful."
+    - id: source-figure-2-swebok-distribution
+      output_path: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/source-figure-2-swebok-distribution.png"
+      capture_target: "PDF Figure 2 on page 5: SWEBOK KA distribution of agent skills"
+      purpose: "Support the centralized vs personal-use skill distribution discussion."
+      insert_location: "after subsection 3 if source evidence is useful."
+    - id: source-table-iii-change-types
+      output_path: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/source-table-iii-change-types.png"
+      capture_target: "PDF Table III on pages 8-9: change-type themes and subthemes in customisation and evolution"
+      purpose: "Support the maintenance-pattern claims; crop tightly and avoid using as the main explainer."
+      insert_location: "after subsection 6, optional."
+
+source_image_notes:
+  - "The custom visual cards should carry the explanation; source screenshots are evidence/proof."
+  - "When extracting figures, crop to figure/table plus caption only; avoid full-page reproduction unless needed for proof."
+  - "Do not include all source screenshots by default; include only those that improve trust or readability in Feishu."
