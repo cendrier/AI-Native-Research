@@ -1,0 +1,47 @@
+visual_cards:
+  global_style:
+    language: zh-CN
+    aspect_ratio: "16:9"
+    background: "light, clean, warm white or very pale blue"
+    layout: "information-dense but readable, rounded cards, clear hierarchy"
+    typography: "large Chinese title, medium section headers, compact labels"
+    iconography: "minimal line icons only; avoid cartoon decoration"
+    color_guidance: "use restrained accent colors; keep source metrics legible"
+    avoid:
+      - "excessive line breaks"
+      - "decorative AI robot imagery"
+      - "dense untranslated English paragraphs"
+      - "placing all visuals at the end of the article"
+  cards:
+    - id: card-01-skill-supply-chain
+      spec_path: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/card-01-skill-supply-chain.spec.md"
+      output_path: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/card-01-skill-supply-chain.png"
+      title: "Skill Supply Chain：从 Registry 到 Repository"
+      insert_location: "after first paragraph of 核心洞察; optional reuse after subsection 2"
+      purpose: "Show the research corpus and explain why skills should be treated as dependencies."
+    - id: card-02-skill-content-taxonomy
+      spec_path: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/card-02-skill-content-taxonomy.spec.md"
+      output_path: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/card-02-skill-content-taxonomy.png"
+      title: "一个成熟 SKILL.md 应该包含什么"
+      insert_location: "after subsection 4 in 重点内容"
+      purpose: "Translate the six content categories into an internal checklist."
+    - id: card-03-reuse-drift-maintenance
+      spec_path: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/card-03-reuse-drift-maintenance.spec.md"
+      output_path: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/card-03-reuse-drift-maintenance.png"
+      title: "一次性复制带来的 Drift 风险"
+      insert_location: "after subsection 5 in 重点内容"
+      purpose: "Visualize near-verbatim copying, low sync, upstream divergence, and additive maintenance."
+    - id: card-04-ai-native-skill-playbook
+      spec_path: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/card-04-ai-native-skill-playbook.spec.md"
+      output_path: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/card-04-ai-native-skill-playbook.png"
+      title: "AI Native Skill Playbook"
+      insert_location: "after 给我们的启示"
+      purpose: "Give teams a practical operating model for internal skill governance."
+
+source_screenshots:
+  plan_path: "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/source-images.yaml"
+  expected_outputs:
+    - "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/source-arxiv-title-abstract.png"
+    - "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/source-figure-1-study-design.png"
+    - "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/source-figure-2-swebok-distribution.png"
+    - "publish/2026-07-08-ai-agent-skills-context-supply-chain/assets/source-table-iii-change-types.png"
