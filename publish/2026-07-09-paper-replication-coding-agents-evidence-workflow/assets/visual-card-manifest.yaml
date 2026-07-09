@@ -1,0 +1,37 @@
+visual_cards:
+  style: "clean, information-dense, light background, rounded cards, minimal iconography, Chinese labels, no excessive decoration"
+  common_requirements:
+    aspect_ratio: "16:9 preferred; readable in Feishu mobile preview"
+    language: zh-CN
+    typography: "large title, clear section labels, concise text blocks, avoid dense paragraphs"
+    palette: "light neutral background; use subtle accent colors only for hierarchy"
+    export_format: png
+  cards:
+    - id: card_01
+      spec_file: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/card-01-prompt-to-evidence-contract.spec.md"
+      output_path: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/card-01-prompt-to-evidence-contract.png"
+      title: "从最终回答到 Evidence Contract"
+      insert_location: "after first paragraph of 核心洞察"
+    - id: card_02
+      spec_file: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/card-02-workspace-validation-gates.spec.md"
+      output_path: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/card-02-workspace-validation-gates.png"
+      title: "Agent Work / Workspace Records / Validation Checks"
+      insert_location: "after subsection 3 in 重点内容"
+    - id: card_03
+      spec_file: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/card-03-replication-results.spec.md"
+      output_path: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/card-03-replication-results.png"
+      title: "12 次运行里的完成、差异和修正"
+      insert_location: "after subsection 4 in 重点内容"
+    - id: card_04
+      spec_file: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/card-04-ai-native-rd-playbook.spec.md"
+      output_path: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/card-04-ai-native-rd-playbook.png"
+      title: "内部 AI Native R&D Workflow Playbook"
+      insert_location: "after 给我们的启示"
+
+source_screenshots:
+  plan_file: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/source-images.yaml"
+  expected_outputs:
+    - "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/source-arxiv-title-abstract.png"
+    - "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/source-figure-1-workflow.png"
+    - "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/source-figure-4-scalar-fidelity.png"
+    - "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/source-github-release-bundle.png"
