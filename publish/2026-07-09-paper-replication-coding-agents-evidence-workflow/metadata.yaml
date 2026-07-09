@@ -1,0 +1,99 @@
+date: 2026-07-09
+slug: paper-replication-coding-agents-evidence-workflow
+title: "AI Agent 的交付物不是最终回答，而是可验证工作区：Paper-replication 的启示"
+status: pending
+language: zh-CN
+content_type: daily_internal_article
+series: AI Native Engineering / AI Coding Daily Publish
+
+primary_source:
+  title: "Coding-agents can replicate scientific machine learning papers"
+  source: arXiv
+  url: "https://arxiv.org/abs/2607.02134"
+  pdf_url: "https://arxiv.org/pdf/2607.02134"
+  publication_date: 2026-07-02
+  accessibility: freely_accessible
+  source_type: primary_research_paper
+  code_and_data: "https://github.com/PredictiveScienceLab/paper-replication-paper"
+
+supporting_sources:
+  - title: "PredictiveScienceLab/paper-replication-paper"
+    source: GitHub
+    url: "https://github.com/PredictiveScienceLab/paper-replication-paper"
+    source_type: released_code_and_case_study_bundle
+  - title: "PaperBench: Evaluating AI's Ability to Replicate AI Research"
+    source: arXiv
+    url: "https://arxiv.org/abs/2504.01848"
+    publication_date: 2025-04-02
+    source_type: benchmark_paper
+  - title: "CORE-Bench: Fostering the Credibility of Published Research Through a Computational Reproducibility Agent Benchmark"
+    source: arXiv
+    url: "https://arxiv.org/abs/2409.11363"
+    publication_date: 2024-09-17
+    source_type: benchmark_paper
+  - title: "From Registry to Repository: How AI Agent Skills Are Written, Adapted, and Maintained"
+    source: arXiv
+    url: "https://arxiv.org/abs/2607.00911"
+    publication_date: 2026-07-01
+    revised_date: 2026-07-06
+    source_type: related_primary_research_paper
+  - title: "From Conversation to Contribution: Characterizing Coding Agent in Open-Source Software"
+    source: arXiv
+    url: "https://arxiv.org/abs/2607.05677"
+    publication_date: 2026-07-06
+    source_type: related_primary_research_paper
+
+tier0_scan:
+  result: no_dedicated_reader_section
+  reader_section_included: false
+  rationale: >-
+    Scanned for new, directly accessible, non-repeated Tier-0 primary sources from OpenAI, Microsoft, Anthropic, Google, GitHub, Atlassian, Stripe, Shopify,
+    Cloudflare, Vercel, Linear, Datadog, NVIDIA, Meta, Amazon, Stanford AI Index, State of DevOps, Accelerate/DORA, and adjacent frontier engineering organizations.
+    No new official flagship report, annual/state-of report, system card, benchmark report, white paper, or major methodology paper from those organizations
+    was both fresh, directly relevant to AI Native Engineering / AI coding, and more valuable than the selected primary research paper. The reader-facing article therefore omits the ⭐ Tier 0 Special Attention section.
+  scan_window_days: 14
+  scan_date: 2026-07-09
+
+selection_rationale: >-
+  Selected because it extends yesterday's agent-skills discussion from context supply chain to evidence-producing workflows. The paper is recent, freely accessible,
+  methodological, and concrete: it implements Paper-replication as a Codex/Claude Code skill, evaluates twelve independent runs across four scientific machine-learning papers,
+  and shows why agent completion should be treated as an inspectable workspace state rather than a final-message claim.
+
+non_repetition:
+  previous_topics:
+    - 2026-06-30: open-source AI coding agent detection / attribution census
+    - 2026-07-01: OpenAI Codex evidence for agentic AI adoption
+    - 2026-07-02: Google DeepMind AI Control Roadmap
+    - 2026-07-03: AWS Forward Deployed Engineering for production agentic AI
+    - 2026-07-04: Microsoft CLI coding agents rollout and social adoption
+    - 2026-07-05: enterprise 2x mandate and review bottleneck
+    - 2026-07-06: AI-generated code governance, provenance, and traceability
+    - 2026-07-07: OSS newcomer participation and code complexity
+    - 2026-07-08: AI agent skills as context supply-chain dependencies
+  today_angle: >-
+    Focuses on evidence contracts and persistent workspaces for AI-native R&D and complex agent workflows. It does not repeat yesterday's registry-to-repository skill lifecycle;
+    instead, it asks what an agent must leave behind so humans can verify long-horizon work.
+
+tags:
+  - AI Native Engineering
+  - AI coding agents
+  - agent skills
+  - scientific reproducibility
+  - R&D workflows
+  - harness engineering
+  - provenance
+  - validation gates
+  - developer productivity
+  - engineering effectiveness
+  - Codex
+  - Claude Code
+  - internal platforms
+
+summary: >-
+  A July 2, 2026 arXiv paper introduces Paper-replication, a coding-agent skill that turns paper replication into a target-level evidence task. Instead of trusting an agent's
+  final message, the workflow requires a persistent workspace, reproduction matrix, task ledger, specification files, run records, provenance records, comparison evidence,
+  report coverage, and validation checks. In twelve independent runs across four scientific machine-learning papers, all workspaces passed the completion gate and 158 recorded targets
+  were matched with report coverage. For AI Native Engineering, the lesson is that production agent workflows should produce auditable evidence, not just outputs.
+
+codex_next_action: >-
+  Generate four visual cards, capture source screenshots, assemble the Feishu article under the target title, upload it to the internal Feishu space, and update publish-status.yaml.
