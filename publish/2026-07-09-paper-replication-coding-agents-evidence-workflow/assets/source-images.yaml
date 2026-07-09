@@ -1,0 +1,38 @@
+source_images:
+  - id: arxiv_title_abstract
+    type: source_proof
+    source: arXiv
+    url: "https://arxiv.org/abs/2607.02134"
+    output_path: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/source-arxiv-title-abstract.png"
+    capture_instruction: "Capture the title, authors, submission date, and abstract block. Crop tightly enough to show the 12 runs / 158 targets claim."
+    insert_location: "Use as small proof image near 原文信息 if Feishu layout benefits; otherwise keep as source evidence attachment."
+
+  - id: figure_1_workflow
+    type: source_figure
+    source: paper_pdf
+    url: "https://arxiv.org/pdf/2607.02134"
+    pdf_page: 4
+    output_path: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/source-figure-1-workflow.png"
+    capture_instruction: "Capture Figure 1: the three rows Agent work / Workspace records / Validation checks. Crop around the diagram plus caption first lines."
+    insert_location: "After subsection 3, near custom card-02, as source evidence if space permits."
+
+  - id: figure_4_scalar_fidelity
+    type: source_figure
+    source: paper_pdf
+    url: "https://arxiv.org/pdf/2607.02134"
+    pdf_page: 11
+    output_path: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/source-figure-4-scalar-fidelity.png"
+    capture_instruction: "Capture Figure 4 showing paper-anchored scalar fidelity. Crop the full figure and enough caption to show what the panels mean."
+    insert_location: "Use as evidence under subsection 4 only if it does not overwhelm the custom visual card."
+
+  - id: github_release_bundle
+    type: source_proof
+    source: GitHub
+    url: "https://github.com/PredictiveScienceLab/paper-replication-paper"
+    output_path: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/source-github-release-bundle.png"
+    capture_instruction: "Capture the README section listing skill/, case_studies/, and analysis/."
+    insert_location: "Use near 延伸阅读 or as source evidence attachment."
+
+notes:
+  - "Source screenshots are supporting evidence. The four generated visual cards should be the main reader-facing explanatory images."
+  - "Do not overuse screenshots in Feishu; prefer one source proof plus the custom cards unless the editor needs more evidence."
