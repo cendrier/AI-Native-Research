@@ -1,0 +1,81 @@
+target:
+  feishu_title: "AI Agent 的交付物不是最终回答，而是可验证工作区：Paper-replication 的启示"
+  target_space: internal_ai_native_engineering
+  content_language: zh-CN
+  publish_type: daily_internal_article
+  source_markdown: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/source.md"
+  metadata_file: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/metadata.yaml"
+  status_file: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/publish-status.yaml"
+
+recommended_document_structure:
+  - heading: "Title"
+    source: "source.md H1"
+  - heading: "原文信息"
+    source: "source.md ## 原文信息"
+  - heading: "核心洞察"
+    source: "source.md ## 核心洞察"
+    insert_after: "核心洞察 section first paragraph"
+    visual_card: "assets/card-01-prompt-to-evidence-contract.spec.md"
+  - heading: "重点内容"
+    source: "source.md ## 重点内容"
+    subsection_card_map:
+      "2. Paper-replication 的核心：把论文 claim 拆成 target-level evidence contract": "assets/card-01-prompt-to-evidence-contract.spec.md"
+      "3. Workflow 结构：agent work、workspace records、validation checks 三层分离": "assets/card-02-workspace-validation-gates.spec.md"
+      "4. 结果：12 次运行全部完成，但“完成”被定义得很克制": "assets/card-03-replication-results.spec.md"
+  - heading: "给我们的启示"
+    source: "source.md ## 给我们的启示"
+    insert_after: "给我们的启示 section"
+    visual_card: "assets/card-04-ai-native-rd-playbook.spec.md"
+  - heading: "延伸阅读"
+    source: "source.md ## 延伸阅读"
+
+visual_cards:
+  style: "clean, information-dense, light background, rounded cards, minimal iconography, Chinese labels, no excessive decoration"
+  manifest: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/visual-card-manifest.yaml"
+  cards:
+    - file: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/card-01-prompt-to-evidence-contract.spec.md"
+      output_path: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/card-01-prompt-to-evidence-contract.png"
+      insert_location: "after the first paragraph of 核心洞察; optional reuse after subsection 2 if Feishu layout benefits"
+    - file: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/card-02-workspace-validation-gates.spec.md"
+      output_path: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/card-02-workspace-validation-gates.png"
+      insert_location: "after subsection 3 in 重点内容"
+    - file: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/card-03-replication-results.spec.md"
+      output_path: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/card-03-replication-results.png"
+      insert_location: "after subsection 4 in 重点内容"
+    - file: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/card-04-ai-native-rd-playbook.spec.md"
+      output_path: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/card-04-ai-native-rd-playbook.png"
+      insert_location: "after 给我们的启示"
+
+source_images:
+  plan_file: "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/source-images.yaml"
+  instructions:
+    - "Capture the arXiv title/date/abstract block as a source-proof screenshot."
+    - "Capture Figure 1 from the PDF because it shows the three-layer workflow: agent work, workspace records, validation checks."
+    - "Capture Figure 4 from the PDF because it shows scalar fidelity and run-to-run variation."
+    - "Capture the GitHub release bundle README because it proves the skill, case-study workspaces, and analysis scripts are available."
+    - "Use source screenshots as proof links and supporting evidence; the reader-facing explanatory visuals should be the four custom cards."
+
+codex_execution_instructions:
+  - "Read source.md and keep the reader-facing structure exactly as requested: 原文信息、核心洞察、重点内容、给我们的启示、延伸阅读."
+  - "Do not add Editor's Note, 为什么值得读, Case, or Pattern sections to the reader-facing Feishu document."
+  - "Do not add a ⭐ Tier 0 Special Attention section because metadata marks this run as no_dedicated_reader_section."
+  - "Generate the four visual cards from the specs and insert each card at its explicit insertion location. Do not place all images at the end."
+  - "Use normal paragraph spacing; avoid excessive line breaks."
+  - "Preserve the nuance: Paper-replication is a method and case-study workflow, not proof that agents can fully reproduce all scientific papers."
+  - "Preserve the main interpretation: production agent workflows should produce auditable evidence and pass external validation gates, not merely produce confident final messages."
+  - "When using the paper's figures, crop tightly and label them as source evidence rather than custom illustrations."
+  - "After publishing to Feishu, update publish-status.yaml with feishu_url, published_at, generated_asset_paths, source_screenshot_paths, and any manual edits."
+  - "If upload fails, leave status as blocked and include the exact failure reason."
+
+file_paths_to_create_or_update:
+  generated_assets:
+    - "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/card-01-prompt-to-evidence-contract.png"
+    - "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/card-02-workspace-validation-gates.png"
+    - "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/card-03-replication-results.png"
+    - "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/card-04-ai-native-rd-playbook.png"
+    - "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/source-arxiv-title-abstract.png"
+    - "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/source-figure-1-workflow.png"
+    - "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/source-figure-4-scalar-fidelity.png"
+    - "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/assets/source-github-release-bundle.png"
+  update_after_publish:
+    - "publish/2026-07-09-paper-replication-coding-agents-evidence-workflow/publish-status.yaml"
